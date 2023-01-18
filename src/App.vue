@@ -48,13 +48,16 @@
       </div>
 
 
+      <!-- Main Lockup Picture  -->
       <div class="hero-picture "></div>
     </div>
-  
+
   </div>
 
 
   <!-- BODY SECTION  -->
+
+  <!-- Promotion block code  -->
   <div class="promo-wrap flex justify-center -mt-5">
     <div class="promotion-block text-white text-4xl p-10">
       Find your dream location
@@ -79,7 +82,132 @@
 
   </div>
 
+  <div class="premier-collection mt-10">
 
+    <div class="premier-heading text-5xl tracking-tight">
+      The Premier Collection
+    </div>
+    <div class="premier-subtext mt-3 text-gray-400 text-base tracking-normal">
+      <!-- Handpicked for their exceptional amenities, personalized service, and prime locations, 
+      these hotels are designed to provide you with an unforgettable and elevated experience.  -->
+      Whether you're traveling for business or leisure, our team at the<span class="text-green-600 font-medium"> Grand
+        Budapest Premier Collection </span><br>
+      hotels offer the perfect blend of comfort and elegance, ensuring that your stay
+      to be truly special.
+    </div>
+
+  </div>
+
+
+  <div class="premier-wrapper flex justify-center">
+
+
+    <!-- ACTUAL PREMIER HOTELS  -->
+    <div class="premier-hotels mt-10">
+
+      <div class="first-row flex justify-between">
+
+        <!-- MUMBAI KAAM 25 HAIN RAM NATH SATYA HAIN IDK -->
+        <div class="hotel-illustration -mr-8 first">
+
+        </div>
+        <div class="text-base font-medium tracking-tight -mt-1">
+          Mumbai, India
+          <div class="text-xs text-gray-400 font-normal tracking-normal">
+            Mumbai, or Bombay, <br>
+            known for it's delicious <br>
+            food and street life.
+          </div>
+
+          <div class="see-flex flex">
+            <div class="text-xs mt-3">
+              See more
+            </div>
+            <div class="arr  text-base ml-2">
+              →
+            </div>
+          </div>
+        </div>
+
+
+        <!-- PARIS , SPAGHETTI MAFIA  -->
+        <div class="hotel-illustration -mr-8 -ml-6 second">
+
+        </div>
+        <div class="text-base font-medium tracking-tight -mt-1">
+          Paris, France
+          <div class="text-xs text-gray-400 font-normal tracking-normal">
+            Paris, known for romantic <br>
+            ambiance and it's <br>
+            delicious culinary scene
+          </div>
+          <div class="see-flex flex">
+            <div class="text-xs mt-3">
+              See more
+            </div>
+            <div class="arr  text-base ml-2">
+              →
+            </div>
+          </div>
+        </div>
+
+
+        <div class="hotel-illustration -mr-8 -ml-6 third">
+
+        </div>
+        <div class="text-base font-medium tracking-tight">
+          New York, USA
+          <div class="text-xs text-gray-400 font-normal tracking-normal">
+            The Big Apple, famous <br>
+            for its iconic skyline <br>
+            and diverse culture.
+          </div>
+          <div class="see-flex flex">
+            <div class="text-xs mt-3">
+              See more
+            </div>
+            <div class="arr  text-base ml-2">
+              →
+            </div>
+          </div>
+        </div>
+
+        <div class="hotel-illustration -mr-8 -ml-6 fourth">
+
+        </div>
+
+        <div class="text-base font-medium tracking-tight">
+          Hong Kong
+          <div class="text-xs text-gray-400 font-normal tracking-normal">
+            Favourite vibrant city <br>
+            with delicious food and <br>
+            towering skyscrapers.
+          </div>
+          <div class="see-flex flex">
+            <div class="text-xs mt-3">
+              See more
+            </div>
+            <div class="arr  text-base ml-2">
+              →
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+  <div class="mt-96">
+
+  </div>
 </template>
 
 <style scoped>

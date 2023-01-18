@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 @font-face {
   font-family: GroteskBold;
@@ -12,70 +11,65 @@
 @font-face {
   font-family: GroteskMedium;
   src: url(./assets/OTF/CabinetGrotesk-Medium.otf);
-}**.
-
-@font-face {
+}
+**. @font-face {
   font-family: GroteskRegular;
   src: url(./assets/OTF/CabinetGrotesk-Regular.otf);
 }
 
-
-
-*{
+* {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
 }
 
-.log-in{
+.log-in {
   font-weight: 500;
   font-size: 13px;
   /* background-color: rgb(255, 255, 255); */
   /* border: #ffffff 2px solid; */
   /* color: #ffffff; */
   /* border: 3px rgb(78, 31, 247) solid; */
-  
+
   /* some weird shit happening with padding here dont touch maybe LMAO */
   /* padding-left: 25px; */
   /* padding-right: 25px; */
   /* border-radius: 5em; */
 }
 
-.discover{
+.discover {
   font-weight: 500;
   background-color: black;
   color: white;
   /* border-radius: 5em; */
 }
 
-.hero-text{
+.hero-text {
   font-family: "GroteskBold";
   letter-spacing: 2px;
   /* color: #ffffff; */
   letter-spacing: -2px;
 }
-.vercel{
+.vercel {
   font-family: inherit;
   /* color: #ffffff; */
-
 }
-.sub-text{
+.sub-text {
   /* font-family: "GroteskMedium"; */
   /* letter-spacing: 1px;-+*
   0
   . vbn */
   /* color: #ffffff8f; */
-
 }
-.main-body{
+.main-body {
   font-family: "GroteskBold";
 }
 
-.visit{
-  font-family: 'EB Garamond';
+.visit {
+  font-family: "EB Garamond";
   font-weight: 400;
   font-style: italic;
 }
 
-.grandparent-wrapper{
+.grandparent-wrapper {
   /* background-blend-mode: darken;
   background-image: url(./assets/darknedbg4.png); */
   /* background-color: #1f4443; */
@@ -84,7 +78,7 @@
   height: 100vh;
 }
 
-.promotion-block{
+.promotion-block {
   font-family: "GroteskBold";
   width: 70%;
   height: 7em;
@@ -95,22 +89,76 @@
   background-size: 100%;
   background-position: 0px -200px;
 }
-.promo-subtext{
+.promo-subtext {
   font-weight: 400;
 }
 
-.hero-picture{
+.hero-picture {
   position: absolute;
   width: 400px;
   margin-left: 63%;
   margin-right: 285px;
   margin-top: 100px;
   height: 500px;
-  background-image: url(./assets/eddi-aguirre-ZAVHbpOn4Jk-unsplash.jpg);
+  /* background-image: url(./assets/eddi-aguirre-ZAVHbpOn4Jk-unsplash.jpg); */
+  background-image: url(./assets/funnyimg.jpeg);
   background-size: 100%;
+  border-radius: 2px;
+  background-position: 0 -150px;
+  /* border: 1px red solid; */
+}
+.premier-heading {
+  font-family: "GroteskBold";
+  margin-left: 15%;
+}
+.premier-subtext {
+  margin-left: 15%;
+}
+.wrapper {
+  /* border: 1px red solid; */
+}
+.premier-hotels {
+  width: 70%;
+  height: 10em;
+  /* border: 1px red solid; */
+  /* margin-left: 15%; */
+}
+
+.hotel-illustration {
+  height: 100px;
+  width: 100px;
   /* border: 1px red solid; */
 }
 
-.wrapper{
-  /* border: 1px red solid; */
+.first {
+  background-image: url(./assets/mumbaiPlaceholder.jpg);
+  background-size: 100%;
+  border-radius: 5px;
+}
+
+.second{
+  background-image: url(./assets/ParisPlaceholder.jpg);
+  background-size: 100%;
+  background-position: 0 -50px;
+  border-radius: 5px;
+}
+
+.third{
+
+  background-image: url(./assets/NYPlaceholder.jpg);
+  background-size: 100%;
+  background-position: 0 -40px;
+  border-radius: 5px;
+}
+
+.fourth{
+
+  background-image: url(./assets/HongKongPlaceholder.jpg);
+  background-size: 150%;
+  border-radius: 5px;
+  background-position: -50px 0px;
+}
+
+.arr{
+  margin-top: 7px;
 }
