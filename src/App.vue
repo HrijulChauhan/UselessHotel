@@ -1,5 +1,4 @@
-<script setup>
-</script>
+
 
 <template>
 
@@ -108,7 +107,8 @@
       <div class="first-row flex justify-between">
 
         <!-- MUMBAI KAAM 25 HAIN RAM NATH SATYA HAIN IDK -->
-        <div class="hotel-illustration -mr-8 first">
+        <div class="hotel-wrapper flex hover:shadow-2xl p-8 rounded-xl">
+        <div class="hotel-illustration mr-5 first">
 
         </div>
         <div class="text-base font-medium tracking-tight -mt-1">
@@ -128,13 +128,14 @@
             </div>
           </div>
         </div>
-
+        </div>
 
         <!-- PARIS , SPAGHETTI MAFIA  -->
-        <div class="hotel-illustration -mr-8 -ml-6 second">
+        <div class="hotel-wrapper flex hover:shadow-2xl p-8 rounded-lg">
+        <div class="hotel-illustration mr-5 second " >
 
         </div>
-        <div class="text-base font-medium tracking-tight -mt-1">
+        <div class="text-base font-medium tracking-tight -mt-1 ">
           Paris, France
           <div class="text-xs text-gray-400 font-normal tracking-normal">
             Paris, known for romantic <br>
@@ -150,12 +151,15 @@
             </div>
           </div>
         </div>
+        </div>
 
 
-        <div class="hotel-illustration -mr-8 -ml-6 third">
+        <!-- IN NEW YORK!! CONCRETE JUNGLE WHERE DREAMS ARE MADE  -->
+        <div class="hotel-wrapper flex hover:shadow-2xl p-8 rounded-xl">
+        <div class="hotel-illustration mr-5  third">
 
         </div>
-        <div class="text-base font-medium tracking-tight">
+        <div class="text-base font-medium -mt-1  tracking-tight">
           New York, USA
           <div class="text-xs text-gray-400 font-normal tracking-normal">
             The Big Apple, famous <br>
@@ -171,12 +175,13 @@
             </div>
           </div>
         </div>
-
-        <div class="hotel-illustration -mr-8 -ml-6 fourth">
-
         </div>
 
-        <div class="text-base font-medium tracking-tight">
+        <!-- <div class="hotel-illustration -mr-8 -ml-6 fourth">
+
+        </div> -->
+
+        <!-- <div class="text-base font-medium tracking-tight">
           Hong Kong
           <div class="text-xs text-gray-400 font-normal tracking-normal">
             Favourite vibrant city <br>
@@ -191,7 +196,7 @@
               →
             </div>
           </div>
-        </div>
+        </div> -->
 
 
       </div>
@@ -255,3 +260,10 @@
   -webkit-text-fill-color: transparent; */
 }
 </style>
+
+
+<script>
+
+
+
+</script>

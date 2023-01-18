@@ -101,7 +101,7 @@
   margin-top: 100px;
   height: 500px;
   /* background-image: url(./assets/eddi-aguirre-ZAVHbpOn4Jk-unsplash.jpg); */
-  background-image: url(./assets/funnyimg.jpeg);
+  background-image: url(./assets/HeroPortrait.jpg);
   background-size: 100%;
   border-radius: 2px;
   background-position: 0 -150px;
@@ -125,8 +125,8 @@
 }
 
 .hotel-illustration {
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   /* border: 1px red solid; */
 }
 
@@ -161,4 +161,13 @@
 
 .arr{
   margin-top: 7px;
+}
+
+.hotel-wrapper{
+  /* border: 1px red solid; */
+  transition: ease-in-out;
+  transition-duration: .3s;
+}
+.HotelHoverShadow {
+  box-shadow: 0 0 10px #ccc;
 }
