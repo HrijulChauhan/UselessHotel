@@ -80,7 +80,10 @@
     <div class="mt-96"></div>
 
   </div>
+  <!-- Promotion End  -->
 
+
+  <!-- Premier Collection Heading  -->
   <div class="premier-collection mt-10">
 
     <div class="premier-heading text-5xl tracking-tight">
@@ -104,107 +107,176 @@
     <!-- ACTUAL PREMIER HOTELS  -->
     <div class="premier-hotels mt-10">
 
+
+
+
+
+
+      <!-- FIRST ROW  -->
       <div class="first-row flex justify-between">
 
         <!-- MUMBAI KAAM 25 HAIN RAM NATH SATYA HAIN IDK -->
         <div class="hotel-wrapper flex hover:shadow-2xl p-8 rounded-xl">
-        <div class="hotel-illustration mr-5 first">
+          <div class="hotel-illustration mr-5 first">
 
-        </div>
-        <div class="text-base font-medium tracking-tight -mt-1">
-          Mumbai, India
-          <div class="text-xs text-gray-400 font-normal tracking-normal">
-            Mumbai, or Bombay, <br>
-            known for it's delicious <br>
-            food and street life.
           </div>
+          <div class="text-base font-medium tracking-tight -mt-1">
+            Mumbai, India
+            <div class="text-xs text-gray-400 font-normal tracking-normal">
+              Mumbai, or Bombay, <br>
+              reputed for delicious <br>
+              food and street life.
+            </div>
 
-          <div class="see-flex flex">
-            <div class="text-xs mt-3">
-              See more
-            </div>
-            <div class="arr  text-base ml-2">
-              →
+            <div class="see-flex flex">
+              <div class="text-xs mt-3">
+                See more
+              </div>
+              <div class="arr  text-base ml-2">
+                →
+              </div>
             </div>
           </div>
-        </div>
         </div>
 
         <!-- PARIS , SPAGHETTI MAFIA  -->
         <div class="hotel-wrapper flex hover:shadow-2xl p-8 rounded-lg">
-        <div class="hotel-illustration mr-5 second " >
+          <div class="hotel-illustration mr-5 second ">
 
-        </div>
-        <div class="text-base font-medium tracking-tight -mt-1 ">
-          Paris, France
-          <div class="text-xs text-gray-400 font-normal tracking-normal">
-            Paris, known for romantic <br>
-            ambiance and it's <br>
-            delicious culinary scene
           </div>
-          <div class="see-flex flex">
-            <div class="text-xs mt-3">
-              See more
+          <div class="text-base font-medium tracking-tight -mt-1 ">
+            Paris, France
+            <div class="text-xs text-gray-400 font-normal tracking-normal">
+              Paris, known for romantic <br>
+              ambiance and it's <br>
+              delicious culinary scene
             </div>
-            <div class="arr  text-base ml-2">
-              →
+            <div class="see-flex flex">
+              <div class="text-xs mt-3">
+                See more
+              </div>
+              <div class="arr  text-base ml-2">
+                →
+              </div>
             </div>
           </div>
-        </div>
         </div>
 
 
         <!-- IN NEW YORK!! CONCRETE JUNGLE WHERE DREAMS ARE MADE  -->
         <div class="hotel-wrapper flex hover:shadow-2xl p-8 rounded-xl">
-        <div class="hotel-illustration mr-5  third">
+          <div class="hotel-illustration mr-5  third">
 
+          </div>
+          <div class="text-base font-medium -mt-1  tracking-tight">
+            New York, USA
+            <div class="text-xs text-gray-400 font-normal tracking-normal">
+              The Big Apple, famous <br>
+              for its iconic skyline <br>
+              and diverse culture.
+            </div>
+            <div class="see-flex flex">
+              <div class="text-xs mt-3">
+                See more
+              </div>
+              <div class="arr  text-base ml-2">
+                →
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="text-base font-medium -mt-1  tracking-tight">
-          New York, USA
-          <div class="text-xs text-gray-400 font-normal tracking-normal">
-            The Big Apple, famous <br>
-            for its iconic skyline <br>
-            and diverse culture.
-          </div>
-          <div class="see-flex flex">
-            <div class="text-xs mt-3">
-              See more
-            </div>
-            <div class="arr  text-base ml-2">
-              →
-            </div>
-          </div>
-        </div>
-        </div>
-
-        <!-- <div class="hotel-illustration -mr-8 -ml-6 fourth">
-
-        </div> -->
-
-        <!-- <div class="text-base font-medium tracking-tight">
-          Hong Kong
-          <div class="text-xs text-gray-400 font-normal tracking-normal">
-            Favourite vibrant city <br>
-            with delicious food and <br>
-            towering skyscrapers.
-          </div>
-          <div class="see-flex flex">
-            <div class="text-xs mt-3">
-              See more
-            </div>
-            <div class="arr  text-base ml-2">
-              →
-            </div>
-          </div>
-        </div> -->
-
 
       </div>
 
 
 
 
+
+
+
+
+      <!-- SECOND ROW  -->
+      <div class="second-row flex justify-between mt-10">
+
+        <!-- tokyo japan  -->
+        <div class="hotel-wrapper flex hover:shadow-2xl p-8 rounded-xl">
+          <div class="hotel-illustration mr-5 fourth">
+
+          </div>
+          <div class="text-base font-medium tracking-tight -mt-1">
+            Tokyo, Japan
+            <div class="text-xs text-gray-400 font-normal tracking-normal">
+              The perfect blend of <br>
+              traditional and modern <br>
+              century culture
+            </div>
+
+            <div class="see-flex flex">
+              <div class="text-xs mt-3">
+                See more
+              </div>
+              <div class="arr  text-base ml-2">
+                →
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TURKEY ISTANBUL  -->
+        <div class="hotel-wrapper flex hover:shadow-2xl p-8 rounded-lg -ml-3">
+          <div class="hotel-illustration mr-5 fifth">
+
+          </div>
+          <div class="text-base font-medium tracking-tight -mt-1 ">
+            Turley, Istanbul
+            <div class="text-xs text-gray-400 font-normal tracking-normal">
+              <!-- Paris, known for romantic <br> -->
+              Known for a rich history <br>
+              and culture, from Blue <br>
+              Mosque to Grand Bazaar
+            </div>
+            <div class="see-flex flex">
+              <div class="text-xs mt-3">
+                See more
+              </div>
+              <div class="arr  text-base ml-2">
+                →
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SYDNEY AUSTRALIA  -->
+        <div class="hotel-wrapper flex hover:shadow-2xl p-8 rounded-xl">
+          <div class="hotel-illustration mr-5  sixth">
+
+          </div>
+          <div class="text-base font-medium -mt-1  tracking-tight">
+            Sydney, AUS
+            <div class="text-xs text-gray-400 font-normal tracking-normal">
+              Notable landmarks, <br>
+              like the Sydney Opera<br>
+              House, Harbour Bridge
+            </div>
+            <div class="see-flex flex">
+              <div class="text-xs mt-3">
+                See more
+              </div>
+              <div class="arr  text-base ml-2">
+                →
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    <!-- Premier Hotel wrap end  -->
     </div>
+
+    
   </div>
 
 
