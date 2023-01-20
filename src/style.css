@@ -73,7 +73,7 @@
 .grandparent-wrapper {
   /* background-blend-mode: darken;
   background-image: url(./assets/darknedbg4.png); */
-  /* background-color: #1f4443; */
+  /* background-color: #01380f; */
   /* background-size: 130%;
   background-position: 0px -500px; */
   height: 100vh;
@@ -82,13 +82,13 @@
 .promotion-block {
   font-family: "GroteskBold";
   width: 74%;
-  height: 7em;
+  height: 8em;
   align-items: center;
   /* border: 1px solid red; */
   border-radius: 10px;
   background-image: url(./assets/findLocation.png);
   background-size: 100%;
-  background-position: 0px -200px;
+  background-position: 0px -400px;
 }
 .promo-subtext {
   font-weight: 400;
@@ -119,8 +119,8 @@
   /* border: 1px red solid; */
 }
 .premier-hotels {
-  width: 70%;
-  height: 10em;
+  width: 72%;
+  /* height: 10em; */
   /* border: 1px red solid; */
   /* margin-left: 15%; */
 }
@@ -183,8 +183,15 @@
 .hotel-wrapper{
   /* border: 1px red solid; */
   transition: ease-in-out;
+  height: 250px;
+  width: 450px;
+  /* border: 1px red solid; */
   transition-duration: .3s;
 }
 .HotelHoverShadow {
   box-shadow: 0 0 10px #ccc;
+}
+
+.body{
+  /* border: 1px red solid; */
 }
