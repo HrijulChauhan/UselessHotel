@@ -104,7 +104,7 @@
   /* background-image: url(./assets/eddi-aguirre-ZAVHbpOn4Jk-unsplash.jpg); */
   background-image: url(./assets/HeroPortrait.jpg);
   background-size: 100%;
-  border-radius: 2px;
+  border-radius: 10px;
   /* background-position: 0 -150px; */
   /* border: 1px red solid; */
 }
@@ -188,10 +188,68 @@
   /* border: 1px red solid; */
   transition-duration: .3s;
 }
+
 .HotelHoverShadow {
   box-shadow: 0 0 10px #ccc;
 }
 
 .body{
   /* border: 1px red solid; */
+}
+
+@keyframes move {
+  from {
+    opacity: 0%;transform: translateY(-75px);
+  }
+
+  to {
+    opacity: 100%;transform: translateY(0px);
+  }
+}
+
+.animate-1{
+  animation: move 1s ease-in-out;
+}
+
+.animate-1_25{
+  animation: move 1.25s ease-in-out;
+}
+
+.animate-1_5{
+  animation: move 1.5s ease-in-out;
+}
+
+
+.activity-heading{
+  margin-left: 15%;
+  font-family: "GroteskBold";
+}
+
+.activity-wrap{
+  margin-left: 15%;
+  width: 70%;
+}
+
+.activity-box{
+  /* border: 1px red solid; */
+  width: 30%;
+  height: 35em;
+  border-radius: 10px;
+}
+
+.first-activity{
+  background-image: url(./assets/FineDiningWine.jpg);
+  background-size: 120%;
+}
+
+.second-activity{
+  background-image: url(./assets/Adventure.jpg);
+  background-size: 300%;
+  background-position: -125px -200px;
+}
+
+.third-activity{
+background-image: url(./assets/Hiking.jpg);
+background-size: 100%;
+
 }
