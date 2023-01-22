@@ -86,7 +86,7 @@
   align-items: center;
   /* border: 1px solid red; */
   border-radius: 10px;
-  background-image: url(./assets/findLocation.png);
+  background-image: url(./assets/findLocation.webp);
   background-size: 100%;
   background-position: 0px -400px;
 }
@@ -102,7 +102,7 @@
   margin-top: 150px;
   height: 600px;
   /* background-image: url(./assets/eddi-aguirre-ZAVHbpOn4Jk-unsplash.jpg); */
-  background-image: url(./assets/HeroPortrait.jpg);
+  background-image: url(./assets/HeroPortrait.webp);
   background-size: 100%;
   border-radius: 10px;
   /* background-position: 0 -150px; */
@@ -132,13 +132,13 @@
 }
 
 .first {
-  background-image: url(./assets/mumbaiPlaceholder.jpg);
+  background-image: url(./assets/mumbaiPlaceholder.webp);
   background-size: 100%;
   border-radius: 5px;
 }
 
 .second{
-  background-image: url(./assets/ParisPlaceholder.jpg);
+  background-image: url(./assets/ParisPlaceholder.webp);
   background-size: 100%;
   background-position: 0 -50px;
   border-radius: 5px;
@@ -146,7 +146,7 @@
 
 .third{
 
-  background-image: url(./assets/newYork.jpg);
+  background-image: url(./assets/newYork.webp);
   background-size: 100%;
   background-position: 0 -40px;
   border-radius: 5px;
@@ -154,7 +154,7 @@
 
 .fourth{
 
-  background-image: url(./assets/Tokyojapan.jpg);
+  background-image: url(./assets/Tokyojapan.webp);
   background-size: 150%;
   border-radius: 5px;
   background-position: -50px 0px;
@@ -162,7 +162,7 @@
 
 .fifth{
 
-  background-image: url(./assets/turkey.jpg);
+  background-image: url(./assets/turkey.webp);
   background-size: 150%;
   border-radius: 5px;
   background-position: -50px 0px;
@@ -170,7 +170,7 @@
 
 .sixth{
 
-  background-image: url(./assets/sydne.jpg);
+  background-image: url(./assets/sydne.webp);
   background-size: 100%;
   border-radius: 5px;
   background-position: 0px -70px;
