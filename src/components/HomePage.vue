@@ -295,19 +295,35 @@
   </div>
 
 
-  <div class="activity-wrap flex justify-between mt-14 ">
+  <div class="activity-wrap flex justify-between mt-14 mb-96">
+
+    <!-- FINE DINING  -->
+    <div class="activity-box">
+      <img src="../assets/FineDiningWine.jpg" alt="">
+      <div class="image-text font-medium text-3xl tracking-tighter text-white ml-5">Culinary Workshops</div>
+      <div class="image-text image-subtext mt-9 text-base text-gray-300 font-medium tracking-wide"> Gourmet experience
+        like no other</div>
+    </div>
+
+    <!-- ADVENTURE SPORTS  -->
+    <div class="activity-box ">
+      <img src="../assets/Adventure.jpg" alt="" srcset="">
+      <div class="image-text font-medium text-3xl tracking-tighter text-white ml-5">Adventure Sports</div>
+      <div class="image-text image-subtext mt-9 text-base text-gray-300 font-medium tracking-wide"> Adrenaline-fueled activities</div>
+    </div>
+
+    <div class="activity-box ">
+      <img src="../assets/Hiking.jpg" alt="">
+      <div class="image-text font-medium text-3xl tracking-tighter text-white ml-5">Nature Excursions</div>
+      <div class="image-text image-subtext mt-9 text-base text-gray-300 font-medium tracking-wide"> Explore the wilderness</div>
     
-    <div class="activity-box first-activity ">
-    </div>
-
-    <div class="activity-box second-activity">
-    </div>
-
-    <div class="activity-box third-activity">
     </div>
 
   </div>
 
+  <div class="text-red-500">
+    Fine dining
+  </div>
 
 
 
