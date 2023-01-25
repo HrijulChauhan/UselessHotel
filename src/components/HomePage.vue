@@ -544,9 +544,9 @@
 }
 </style>
 
-
 <script>
-// console.log(document.documentElement.clientWidth);
 
 
 </script>
+
+
