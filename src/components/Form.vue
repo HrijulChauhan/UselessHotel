@@ -1,3 +1,5 @@
+
+
 <template >
 
   <div class="text-5xl font-semibold tracking-tight pl-28 mt-10">
@@ -30,15 +32,16 @@
 
         <label for="country" class="block text-sm font-medium text-gray-700 mt-2">Country</label>
         <select id="country" name="country" autocomplete="country-name"
-          class="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+          class="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm" v-model="selectedLocation">
 
-          <option>New York</option>
-          <option>Canada</option>
-          <option>Mexico</option>
-          <option>Istanbul</option>
-          <option>Paris</option>
-          <option>New Delhi</option>
-          <option>Thailand</option>
+          <option value="New York">New York</option>
+          <option value="Canada">Canada</option>
+          <option value="Mexico">Mexico</option>
+          <option value="Istanbul">Istanbul</option>
+          <option value="Paris">Paris</option>
+          <option value="New Delhi">New Delhi</option>
+          <option value="Thailand">Thailand</option>
+          <option value=""> {{ selectedLocation }}</option>
 
         </select>
       </div>
@@ -53,5 +56,53 @@
     </div>
 
 
+    <div class="flex">
+      <!-- PACKAGE OPTION  -->
+      <div class="col-span-6 sm:col-span-3 mt-10 " style="width:300px; height: 50px;">
+
+        <label for="country" class="block text-sm font-medium text-gray-700 mt-2">Package Option at {{ selectedLocation }}</label>
+        <select id="country" name="country" autocomplete="country-name"
+          class="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+
+          <option>None</option>
+          <option>Breakfast included</option>
+          <option>Breakfast + Dinner</option>
+          <option>Breakfast, Dinner + Unlimited Drinks</option>
+        </select>
+
+
+      </div>
+
+      <!-- room type + rate -->
+      <div class="col-span-6 sm:col-span-3 mt-10 pl-16">
+
+        <label for="country" class="block text-sm font-medium text-gray-700 mt-2">Room type (per night)</label>
+        <select id="country" name="country" autocomplete="country-name"
+          class="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm" style="width:300px">
+
+          <option>Single Bedroom 50$</option>
+          <option>Double Bedroom 75$</option>
+          <option>Suite 125$</option>
+          <option>Penthouse 250$</option>
+        </select>
+
+
+      </div>
+    </div>
+
   </form>
 </template>
+
+<script>
+
+export default{
+  data() {
+    return {
+      selectedLocation: '',
+    }
+  }
+}
+
+// console.log(selectedLocation)
+
+</script>
