@@ -2,56 +2,75 @@
 
 
 
-    <navbar />
+    <navbar>
 
-    
-    <div class="text-center mb-96">
-        this shit random af
-    </div>
-    <div class="text-center mb-96">
-        this the 2nd shit
-    </div>
+        <template #first_nav>
+            <p class="hover:text-black px-3">Home</p>
+        </template>
 
-    <div class="text-center mb-96">
-        this the 2nd shit
-    </div>
+        <template #second_nav>
+            <p class="hover:text-black px-3">About Us</p>
+        </template>
+
+        <template #third_nav>
+            <p class="hover:text-black px-3">Contact</p>
+        </template>
+
+        <template #fourth_nav>
+            <p class="hover:text-black px-3">Browse</p>
+        </template>
 
 
 
+
+        <template #first_hb>
+            <a href="#" class="pb-5 mt-36 animate-1_5 text-blue-600">Home</a>
+        </template>
+
+        <template #second_hb>
+            <a href="#" class="pb-5 animate-1_5 text-black">Contact Us</a>
+        </template>
+
+        <template #third_hb>
+            <a href="#" class="pb-5 animate-1_5 text-black">Browse</a>
+        </template>
+
+    </navbar>
+
+    <promoblock class="mt-0">
+
+        <template #title>
+            Find your dream location
+        </template>
+
+        <template #body>
+            <div>
+                With over 800 locations in 37 countries, you're sure to find what you're looking for. <br>
+                Find what you're looking for, and discover the heaven that is The Grand Budapest.
+            </div>
+        </template>
+
+    </promoblock>
 
 
 
 </template>
 
 <style>
-.navbar {
-    width: 90%;
-    /* height: 2em; */
-    /* border: 5px blue solid; */
-}
 
-.logo {
-    font-family: "GroteskBold";
-}
-
-.links {
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 13px;
-    transition: ease-in-out;
-    animation-duration: 0.5s;
-}
 </style>
 
 <script>
 
 import navbar from './Navbar.vue'
+import promoblock from './PromotionBlock.vue'
 
 export default {
-    
+
     components: {
-        navbar
-    },  
+        navbar,
+        promoblock
+    },
 
     data() {
         return {

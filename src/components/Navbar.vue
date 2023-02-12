@@ -5,10 +5,12 @@
             <div class="GBFont text-3xl text-black">GB</div>
 
             <div class="nav-links text-sm font-normal flex items-center text-gray-400 tracking-tight ">
-                <a href="#" class="hover:text-black px-3"> About Us </a>
-                <a href="#" class="hover:text-black px-3"> Contact Us </a>
-                <a href="#" class="hover:text-black px-3"> Testimonials </a>
-                <a href="#" class="hover:text-black px-3"> Locations </a>
+                
+                <slot name="first_nav"> Home </slot>
+                <slot name="second_nav"> About Us </slot>
+                <slot name="third_nav"> Contact </slot>
+                <slot name="fourth_nav"> Browse </slot>
+            
             </div>
 
             <div class="Log text-lg font-medium text-black"> Log in </div>
@@ -24,18 +26,20 @@
 
     </header>
 
-    <div class="option text-5xl pl-10 pt-10 flex flex-col bg-white font-medium tracking-tight"
+
+    <nav class="option text-5xl pl-10 pt-10 flex flex-col bg-white font-light tracking-tight"
         style="position:fixed; top: 0; left: 0;" v-if="showOptions">
 
         <span @click="showOptions = !showOptions">
             <img src="../assets/close.svg" width="20" height="20" alt="">
         </span>
 
-        <a href="#" class="pb-5 mt-36 animate-1_5 text-blue-600">Home</a>
-        <a href="#" class="pb-5 animate-1_25">About</a>
-        <a href="#" class="animate-1">Contact</a>
 
-    </div>
+        <slot name="first_hb"> Home </slot>
+        <slot name="second_hb"> About Us </slot>
+        <slot name="third_hb"> Contact </slot>
+
+    </nav>
 
 </template>
 
@@ -55,25 +59,17 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
 .option {
     height: 100%;
     width: 100%;
-}
-
-.test {
-    margin-top: 100px;
-}
-
-.test2 {
-    margin-top: 1000px;
 }
 
 .hamburger {
     display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 600px) {
 
     .nav-links,
     .GBFont,

@@ -83,20 +83,6 @@
   height: 100vh;
 }
 
-.promotion-block {
-  font-family: "GroteskBold";
-  width: 74%;
-  height: 8em;
-  align-items: center;
-  /* border: 1px solid red; */
-  border-radius: 10px;
-  background-image: url(./assets/findLocation.webp);
-  background-size: 100%;
-  background-position: 0px -400px;
-}
-.promo-subtext {
-  font-weight: 400;
-}
 
 .hero-picture {
   position: absolute;

@@ -498,12 +498,6 @@
 
 </template>
 
-<script>
-
-  console.log(window.innerWidth)
-
-</script>
-
 <style scoped>
 .navbar {
   width: 70%;
@@ -551,7 +545,15 @@
 </style>
 
 <script>
+import navbar from './Navbar.vue'
 
+export default {
+    
+    components: {
+        navbar
+    }
+
+}
 
 </script>
 
