@@ -299,7 +299,7 @@
 
     <!-- FINE DINING  -->
     <div class="activity-box">
-      <img src="../assets/FineDiningWine.webp" alt="" loading="lazy">
+      <img src="../assets/FineDiningWine.png" alt="" loading="lazy">
       <div class="image-text font-medium text-3xl tracking-tighter text-white ml-5">Culinary Workshops</div>
       <div class="image-text image-subtext mt-9 text-base text-gray-300 font-medium tracking-wide"> Gourmet experience
         like no other</div>
@@ -307,7 +307,7 @@
 
     <!-- ADVENTURE SPORTS  -->
     <div class="activity-box ">
-      <img src="../assets/Adventure.webp" alt="" loading="lazy">
+      <img src="../assets/Adventure.png" alt="" loading="lazy">
       <div class="image-text font-medium text-3xl tracking-tighter text-white ml-5">Adventure Sports</div>
       <div class="image-text image-subtext mt-9 text-base text-gray-300 font-medium tracking-wide"> Adrenaline-fueled
         activities</div>
@@ -315,7 +315,7 @@
 
     <!-- HIKING  -->
     <div class="activity-box ">
-      <img src="../assets/Hiking.webp" alt="" loading="lazy">
+      <img src="../assets/Hiking.png" alt="" loading="lazy">
       <div class="image-text font-medium text-3xl tracking-tighter text-white ml-5">Nature Excursions</div>
       <div class="image-text image-subtext mt-9 text-base text-gray-300 font-medium tracking-wide"> Explore the
         wilderness</div>
@@ -497,6 +497,12 @@
 
 
 </template>
+
+<script>
+
+  console.log(window.innerWidth)
+
+</script>
 
 <style scoped>
 .navbar {

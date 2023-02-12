@@ -12,13 +12,17 @@
   font-family: GroteskMedium;
   src: url(./assets/OTF/CabinetGrotesk-Medium.otf);
 }
-**. @font-face {
+@font-face {
   font-family: GroteskRegular;
   src: url(./assets/OTF/CabinetGrotesk-Regular.otf);
 }
 
 * {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.GBFont {
+  font-family: "GroteskBold";
 }
 
 .log-in {
