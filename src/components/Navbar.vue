@@ -17,7 +17,7 @@
         </nav>
 
         <nav class="animate-1">
-            <div class="hamburger space-y-2 ml-10 z-20" @click="showOptions = !showOptions">
+            <div class="hamburger space-y-2 ml-10 z-20" @click="showOptions = ! showOptions">
                 <span class="block w-8 h-0.5 bg-gray-600"></span>
                 <span class="block w-8 h-0.5 bg-gray-600"></span>
                 <span class="block w-5 h-0.5 bg-gray-600"></span>

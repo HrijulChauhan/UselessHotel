@@ -41,7 +41,7 @@
 
 .discover {
   font-weight: 500;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.851);
   color: white;
   /* border-radius: 5em; */
 }

@@ -1,43 +1,42 @@
 <template>
 
-
-
     <navbar>
 
         <template #first_nav>
-            <p class="hover:text-black px-3">Home</p>
+            <p class="px-3 hover:text-black">Home</p>
         </template>
 
         <template #second_nav>
-            <p class="hover:text-black px-3">About Us</p>
+            <p class="px-3 hover:text-black">About Us</p>
         </template>
 
         <template #third_nav>
-            <p class="hover:text-black px-3">Contact</p>
+            <p class="px-3 hover:text-black">Contact</p>
         </template>
 
         <template #fourth_nav>
-            <p class="hover:text-black px-3">Browse</p>
+            <p class="px-3 hover:text-black">Browse</p>
         </template>
-
 
 
 
         <template #first_hb>
-            <a href="#" class="pb-5 mt-36 animate-1_5 text-blue-600">Home</a>
+            <a href="#" class="pb-5 text-blue-600 mt-36 animate-1_5">Home</a>
         </template>
 
         <template #second_hb>
-            <a href="#" class="pb-5 animate-1_5 text-black">Contact Us</a>
+            <a href="#" class="pb-5 text-black animate-1_25">Contact Us</a>
         </template>
 
         <template #third_hb>
-            <a href="#" class="pb-5 animate-1_5 text-black">Browse</a>
+            <a href="#" class="pb-5 text-black animate-1">Browse</a>
         </template>
 
     </navbar>
 
-    <promoblock class="mt-0">
+
+
+    <!-- <promoblock class="mt-0">
 
         <template #title>
             Find your dream location
@@ -50,9 +49,54 @@
             </div>
         </template>
 
-    </promoblock>
+    </promoblock> -->
 
 
+
+    <HotelCard class="mt-10">
+
+        <template #first-location>
+            Dababy
+        </template>
+
+        <template #first-price>
+            too high for you buddy
+        </template>
+
+        <template #second-location>
+            Dababy2
+        </template>
+
+        <template #second-price>
+            too high 2 for you buddy
+        </template>
+
+
+
+    </HotelCard>
+
+
+    <HotelCard class="mt-10">
+
+        <template #first-location>
+            Dababy
+        </template>
+
+        <template #first-price>
+            too high for you buddy
+        </template>
+
+        <template #second-location>
+            Dababy2
+        </template>
+
+        <template #second-price>
+            too  uddy
+        </template>
+
+
+
+    </HotelCard>
 
 </template>
 
@@ -64,12 +108,14 @@
 
 import navbar from './Navbar.vue'
 import promoblock from './PromotionBlock.vue'
+import HotelCard from './HotelCard.vue'
 
 export default {
 
     components: {
         navbar,
-        promoblock
+        promoblock,
+        HotelCard
     },
 
     data() {
