@@ -1,12 +1,16 @@
 <template>
 
-    <div class="animate-1_5 flex justify-center">
-        <div class="GBFont promotion-block mt-24 text-white items-center 2xl:text-4xl md:text-3xl sm:text-xl p-14 2xl:h-72 rounded-xl">
+    <div class="flex justify-center animate-1_5">
+        <div
+            class="items-center mt-24 text-pink-800 promotion-block p-14 rounded-xl sm:text-white">
 
-            <slot name="title"> Dream location quote </slot>
-
+            <div class="text-xl text-center GBFont 2xl:text-3xl lg:text-left">
+                <slot name="title"> Dream location quote </slot>
+            </div>
+            
             <div class="">
-                <article class="font-normal 2xl:text-base md:text-sm sm:text-sm text-gray-400 pt-2 lg:text-left sm:text-center">
+                <article
+                    class="pt-2 text-sm font-normal text-center text-pink-900 md:text-base lg:text-left lg:text-lg 2xl:text-xl sm:text-gray-400">
                     <slot name="body">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe eos dolores
                         nisi dolore voluptate reiciendis, laborum soluta corporis consequuntur pariatur,
@@ -15,9 +19,9 @@
                 </article>
             </div>
 
-            <ul class="flex mt-4">
-                <li class="font-normal text-base see-more pt-5"> See more </li>
-                <li class="right-arrow pt-5 pl-2 text-base"> → </li>
+            <ul class="flex justify-center mt-4 2xl:text-left lg:justify-start ">
+                <li class="pt-5 text-base font-normal see-more"> See more </li>
+                <li class="pt-5 pl-2 text-base right-arrow"> → </li>
             </ul>
 
         </div>
@@ -36,14 +40,19 @@
     background-position: 0px -400px;
 }
 
-@media (max-width: 400px) {
-    
-    .promotion-block{
+/* @media (max-width: 400px) {
+
+    .promotion-block {
         background-image: url(../assets/findLocationResp.png);
         background-size: 100%;
         text-align: center;
     }
+} */
+
+@media (max-width: 640px){
+    .promotion-block{
+        background: url(../assets/PiggyPink.jpg);
+        background-position: 0px 0px;
+    }
 }
-
-
 </style>
