@@ -40,14 +40,17 @@
 
     <div class="flex justify-center">
         <div class="px-10" v-for="hotel in hotels">
-            <div class="product-card">
-                <img :src="hotel.src" alt="Image">
+
+            <router-link :to="{ name: 'productInformation', params: { id: hotel.id }}">
+                <div class="product-card">
+                    <img :src="hotel.src" alt="Image">
+                </div>
+            </router-link>
+            <div class="mt-2 text-base font-medium tracking-normal text-gray-900">
+                ${{ hotel.price }} 
             </div>
-            <div>
-                <b> {{ hotel.name }} </b>
-            </div>
-            <div>
-                {{ hotel.price }}
+            <div class="-mt-1 text-base font-light tracking-tighter text-gray-500">
+                {{ hotel.name }} 
             </div>
         </div>
     </div>
@@ -99,8 +102,8 @@ export default {
             ],
             hotels: [
                 { name: "bruh", id: 1, price: 1232, src: "/images/ProductPhotos/colin-lloyd-DQcu4QOdj5c-unsplash.jpg" },
-                { name: "bruh2", id: 1, price: 123, src: "/images/ProductPhotos/colin-lloyd-DQcu4QOdj5c-unsplash.jpg" },
-                { name: "bruh3", id: 1, price: 13, src: "/images/ProductPhotos/colin-lloyd-DQcu4QOdj5c-unsplash.jpg" }
+                { name: "bruh2", id: 2, price: 123, src: "/images/ProductPhotos/colin-lloyd-DQcu4QOdj5c-unsplash.jpg" },
+                { name: "bruh3", id: 3, price: 13, src: "/images/ProductPhotos/colin-lloyd-DQcu4QOdj5c-unsplash.jpg" }
             ]
         }
     }
