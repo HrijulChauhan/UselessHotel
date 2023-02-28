@@ -1,8 +1,9 @@
-import { createRouter, createWebHistory } from "vue-router"
-import HomePage from "../components/HomePage.vue"
-import About from "../components/About.vue"
-import Form from "../components/Form.vue"
-import BookHotel from "../components/BookHotel.vue"
+import { createRouter, createWebHistory } from "vue-router";
+import HomePage from "../components/HomePage.vue";
+import About from "../components/About.vue";
+import Form from "../components/Form.vue";
+import BookHotel from "../components/BookHotel.vue";
+import ProductInfo from "../components/ProductInfo.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -13,18 +14,23 @@ const router = createRouter({
       component: HomePage,
     },
     {
-        path:'/about',
-        component: About,
+      path: "/about",
+      component: About,
     },
     {
-      path: '/form',
+      path: "/form",
       component: Form,
     },
     {
-      path: '/Book',
+      path: "/Book",
       component: BookHotel,
-    }
+    },
+    {
+      path: '/product/:id',
+      name: 'productInformation',
+      component: ProductInfo,
+    },
   ],
 });
 
-export default router
+export default router;

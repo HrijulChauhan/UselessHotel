@@ -13,7 +13,7 @@
             
             </div>
 
-            <div class="Log text-lg font-medium text-black"> Log in </div>
+            <div class="Log text-lg font-semibold text-black"> Log in </div>
         </nav>
 
         <nav class="animate-1">

@@ -1,7 +1,6 @@
 
 
 <template>
-
   <!-- NAVBAR + HERO  -->
   <div class="grandparent-wrapper pb-96 ">
 
@@ -43,9 +42,12 @@
           a royal sanctuary for the discerning traveler
         </div>
 
-        <div class="pt-8 text-base text-left ml-2 animate-1_5">
-          <button class="discover px-8 py-3">Discover</button>
-        </div>
+        <router-link to="/book">
+          <div class="pt-8 text-base text-left ml-2 animate-1_5">
+            <button class="discover px-8 py-3">Discover</button>
+          </div>
+        </router-link>
+
       </div>
 
 
@@ -92,9 +94,9 @@
       <div class="premier-heading text-6xl tracking-tight">
         The Premier Collection
       </div>
-      <div class="premier-subtext mt-3 text-gray-400 text-lg tracking-normal">
+    <div class="premier-subtext mt-3 text-gray-400 text-lg tracking-normal">
         <!-- Handpicked for their exceptional amenities, personalized service, and prime locations, 
-      these hotels are designed to provide you with an unforgettable and elevated experience.  -->
+        these hotels are designed to provide you with an unforgettable and elevated experience.  -->
         Whether you're traveling for business or leisure, our team at the<span class="text-green-600 font-medium"> Grand
           Budapest Premier Collection </span><br>
         hotels offer the perfect blend of comfort and elegance, ensuring that your stay
@@ -284,9 +286,9 @@
   <div class="activity-heading mt-20 text-6xl tracking-tight">
     Discover Activities
   </div>
-  <div class="premier-subtext mt-3 text-gray-400 text-lg tracking-normal">
+<div class="premier-subtext mt-3 text-gray-400 text-lg tracking-normal">
     <!-- Handpicked for their exceptional amenities, personalized service, and prime locations, 
-      these hotels are designed to provide you with an unforgettable and elevated experience.  -->
+        these hotels are designed to provide you with an unforgettable and elevated experience.  -->
     Discover a world of adventure and excitement with our wide
     range of activities at the
     <span class="text-green-600 font-medium"> Grand Budapest Premier Collection</span> <br>
@@ -396,14 +398,14 @@
       <div class="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div class="">
           <h6 class="
-            uppercase
-            font-semibold
-            mb-4
-            flex
-            items-center
-            justify-center
-            md:justify-start
-          ">
+              uppercase
+              font-semibold
+              mb-4
+              flex
+              items-center
+              justify-center
+              md:justify-start
+            ">
             Grand Budapest
           </h6>
           <p>
@@ -494,8 +496,6 @@
       <a class="text-gray-600 font-semibold" href="https://tailwind-elements.com/">Grand Budapest</a>
     </div>
   </footer>
-
-
 </template>
 
 <style scoped>
@@ -548,10 +548,10 @@
 import navbar from './Navbar.vue'
 
 export default {
-    
-    components: {
-        navbar
-    }
+
+  components: {
+    navbar
+  }
 
 }
 

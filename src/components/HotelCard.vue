@@ -1,5 +1,4 @@
 <template>
-
     <section class="m-auto" style="width: 75%;">
         <div class="flex flex-col items-center justify-center lg:flex-row lg:justify-between">
 
@@ -63,8 +62,10 @@
             </div>
 
         </div>
-    </section>
 
+
+
+    </section>
 </template>
 
 

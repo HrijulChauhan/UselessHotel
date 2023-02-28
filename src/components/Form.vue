@@ -96,7 +96,7 @@
 
 
     <div class="text-sm mt-16">
-      <button class="font-medium px-8 py-3 bg-black text-white" @click="postToApi()">Browse</button>
+      <button class="font-medium px-8 py-3 bg-black text-white" @click="">Browse</button>
     </div>
     
 

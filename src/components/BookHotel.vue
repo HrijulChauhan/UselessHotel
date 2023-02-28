@@ -1,5 +1,4 @@
 <template>
-
     <navbar>
 
         <template #first_nav>
@@ -36,110 +35,163 @@
 
 
 
-    <!-- <promoblock class="mt-0">
 
-        <template #title>
-            Find your dream location
-        </template>
+    <div class="m-auto my-10 text-3xl font-semibold tracking-tighter text-center text-gray-800"> Browse Hotels</div>
 
-        <template #body>
-            <div>
-                With over 800 locations in 37 countries, you're sure to find what you're looking for. <br>
-                Find what you're looking for, and discover the heaven that is The Grand Budapest.
+    <!-- ROW 1 -->
+    <section class="flex flex-col items-center justify-center mt-5 2xl:flex-row">
+
+        <span class="mx-16 ">
+
+            <router-link to="{name: 'product'}">
+                <div class="product-card">
+                    <img src="../assets/ProductPhotos/dose-juice-gvqjjYOlQHQ-unsplash.jpg" alt="Product Photo"
+                        class="object-cover rounded-lg">
+                </div>
+            </router-link>
+
+            <p class="mt-2 text-base font-normal text-gray-900"> $120 </p>
+            <p class="-mt-1 text-base font-light tracking-tighter text-gray-500"> New York, USA</p>
+        </span>
+
+        <span class="mx-16 mt-10 2xl:mt-0">
+            <div class="product-card ">
+                <img src="../assets/ProductPhotos/usama-akram-kP6knT7tjn4-unsplash.jpg" alt=""
+                    class="object-cover rounded-lg">
             </div>
-        </template>
 
-    </promoblock> -->
+            <p class="mt-3 text-base font-normal text-gray-900"> $75 </p>
+            <p class="-mt-1 text-base font-light tracking-tighter text-gray-500"> Paris, France</p>
+        </span>
 
+        <span class="mx-16 mt-10 2xl:mt-0">
 
+            <div class="product-card ">
+                <img src="../assets/ProductPhotos/mk-2-XoiBIpYkPJA-unsplash.jpg" alt="" class="object-cover rounded-lg">
+            </div>
 
-    <HotelCard class="mt-10">
+            <p class="mt-2 text-base font-normal text-gray-900"> $50 </p>
+            <p class="-mt-1 text-base font-light tracking-tighter text-gray-500"> New Delhi, India</p>
+        </span>
 
-        <template #first-location>
-            Dababy
-        </template>
+    </section>
 
-        <template #first-price>
-            too high for you buddy
-        </template>
+    <!-- ROW 2 -->
+    <section class="flex flex-col items-center justify-center mt-10 2xl:flex-row">
 
-        <template #second-location>
-            Dababy2
-        </template>
+        <span class="mx-16 ">
+            <div class="product-card">
+                <img src="../assets/ProductPhotos/janno-partna-Hvfeg0fU5vE-unsplash.jpg" alt="Product Photo"
+                    class="object-cover rounded-lg">
+            </div>
+            <p class="mt-2 text-base font-normal text-gray-900"> $12 </p>
+            <p class="-mt-1 text-base font-light tracking-tighter text-gray-500"> Turkey, Istanbul</p>
+        </span>
 
-        <template #second-price>
-            too high 2 for you buddy
-        </template>
+        <span class="mx-16 mt-10 2xl:mt-0">
 
+            <div class="bg-white product-card ">
+                <img src="../assets/ProductPhotos/colin-lloyd-DQcu4QOdj5c-unsplash.jpg" alt=""
+                    class="object-cover rounded-lg">
+            </div>
 
+            <p class="mt-3 text-base font-normal text-gray-900"> $105 </p>
+            <p class="-mt-1 text-base font-light tracking-tighter text-gray-500"> South London, UK</p>
 
-    </HotelCard>
+        </span>
 
+        <span class="mx-16 mt-10 2xl:mt-0">
 
-    <HotelCard class="mt-10">
+            <div class="product-card ">
+                <img src="../assets/ProductPhotos/kadarius-seegars-0FHNXqyqgg4-unsplash.jpg" alt=""
+                    class="object-cover rounded-lg">
+            </div>
 
-        <template #first-location>
-            Dababy
-        </template>
+            <p class="mt-2 text-base font-normal text-gray-900"> $55 </p>
+            <p class="-mt-1 text-base font-light tracking-tighter text-gray-500"> Mumbai, India</p>
+        </span>
 
-        <template #first-price>
-            too high for you buddy
-        </template>
+    </section>
 
-        <template #second-location>
-            Dababy2
-        </template>
+    <!-- ROW 3 -->
+    <section class="flex flex-col items-center justify-center mt-10 2xl:flex-row">
 
-        <template #second-price>
-            too  uddy
-        </template>
+        <span class="mx-16 ">
+            <div class="product-card">
+                <img src="../assets/ProductPhotos/dose-juice-gvqjjYOlQHQ-unsplash.jpg" alt="Product Photo"
+                    class="object-cover rounded-lg">
+            </div>
+            <p class="mt-2 text-base font-normal text-gray-900"> $120 </p>
+            <p class="-mt-1 text-base font-light tracking-tighter text-gray-500"> New York, USA</p>
+        </span>
 
+        <span class="mx-16 mt-10 2xl:mt-0">
 
+            <div class="bg-white product-card ">
+                <img src="../assets/ProductPhotos/usama-akram-kP6knT7tjn4-unsplash.jpg" alt=""
+                    class="object-cover rounded-lg">
+            </div>
 
-    </HotelCard>
+            <p class="mt-3 text-base font-normal text-gray-900"> $75 </p>
+            <p class="-mt-1 text-base font-light tracking-tighter text-gray-500"> Paris, France</p>
 
+        </span>
+
+        <span class="mx-16 mt-10 2xl:mt-0">
+
+            <div class="product-card ">
+                <img src="../assets/ProductPhotos/mk-2-XoiBIpYkPJA-unsplash.jpg" alt="" class="object-cover rounded-lg">
+            </div>
+
+            <p class="mt-2 text-base font-normal text-gray-900"> $50 </p>
+            <p class="-mt-1 text-base font-light tracking-tighter text-gray-500"> New Delhi, India</p>
+        </span>
+
+    </section>
+
+    <bottomFooter />
 </template>
 
-<style>
+<style scoped>
+img {
+    width: 100%;
+    max-height: 100%;
+}
 
+.product-card {
+    width: 380px;
+    height: 380px;
+}
+
+
+@media (min-width: 1024px) {
+    .product-card {
+        width: 700px;
+        height: 580px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .product-card {
+        width: 380px;
+        height: 400px;
+    }
+}
 </style>
 
 <script>
-
 import navbar from './Navbar.vue'
-import promoblock from './PromotionBlock.vue'
-import HotelCard from './HotelCard.vue'
+import bottomFooter from './Footer.vue'
 
 export default {
-
     components: {
         navbar,
-        promoblock,
-        HotelCard
+        bottomFooter
     },
-
-    data() {
-        return {
-            hotels: [
-                { HotelLocation: "New York", RoomPrice: 280, Rating: 5 },
-                { HotelLocation: "Paris, France", RoomPrice: 500, Rating: 4.5 },
-                { HotelLocation: "London, UK", RoomPrice: 220, Rating: 3.5 },
-                { HotelLocation: "Tokyo, Japan", RoomPrice: 250, Rating: 5 },
-                { HotelLocation: "Sydney, Australia", RoomPrice: 230, Rating: 4 },
-                { HotelLocation: "Mumbai, India", RoomPrice: 190, Rating: 4.5 },
-                { HotelLocation: "Berlin, Germany", RoomPrice: 210, Rating: 3.5 },
-                { HotelLocation: "Mexico City, Mexico", RoomPrice: 160, Rating: 4 }
-            ]
-        };
-    },
-    methods: {
-        sort(order) {
-            if (order === "asc") {
-                this.hotels.sort((a, b) => a.RoomPrice - b.RoomPrice);
-            } else {
-                this.hotels.sort((a, b) => b.RoomPrice - a.RoomPrice);
-            }
+    data(){
+        return{
+            id:3,
         }
     }
-};
+}
 </script>
