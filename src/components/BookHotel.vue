@@ -38,117 +38,13 @@
 
     <div class="m-auto my-10 text-3xl font-semibold tracking-tighter text-center text-gray-800"> Browse Hotels</div>
 
-    <!-- ROW 1 -->
-    <section class="flex flex-col items-center justify-center mt-5 2xl:flex-row">
-
-        <span class="mx-16 ">
-
-            <router-link to="{name: 'product'}">
-                <div class="product-card">
-                    <img src="../assets/ProductPhotos/dose-juice-gvqjjYOlQHQ-unsplash.jpg" alt="Product Photo"
-                        class="object-cover rounded-lg">
-                </div>
-            </router-link>
-
-            <p class="mt-2 text-base font-normal text-gray-900"> $120 </p>
-            <p class="-mt-1 text-base font-light tracking-tighter text-gray-500"> New York, USA</p>
-        </span>
-
-        <span class="mx-16 mt-10 2xl:mt-0">
-            <div class="product-card ">
-                <img src="../assets/ProductPhotos/usama-akram-kP6knT7tjn4-unsplash.jpg" alt=""
-                    class="object-cover rounded-lg">
-            </div>
-
-            <p class="mt-3 text-base font-normal text-gray-900"> $75 </p>
-            <p class="-mt-1 text-base font-light tracking-tighter text-gray-500"> Paris, France</p>
-        </span>
-
-        <span class="mx-16 mt-10 2xl:mt-0">
-
-            <div class="product-card ">
-                <img src="../assets/ProductPhotos/mk-2-XoiBIpYkPJA-unsplash.jpg" alt="" class="object-cover rounded-lg">
-            </div>
-
-            <p class="mt-2 text-base font-normal text-gray-900"> $50 </p>
-            <p class="-mt-1 text-base font-light tracking-tighter text-gray-500"> New Delhi, India</p>
-        </span>
-
-    </section>
-
-    <!-- ROW 2 -->
-    <section class="flex flex-col items-center justify-center mt-10 2xl:flex-row">
-
-        <span class="mx-16 ">
+    <div class="flex justify-center">
+        <div class="px-10" v-for="hotel in hotels">
             <div class="product-card">
-                <img src="../assets/ProductPhotos/janno-partna-Hvfeg0fU5vE-unsplash.jpg" alt="Product Photo"
-                    class="object-cover rounded-lg">
+                <img :src="hotel.src" alt="Image">
             </div>
-            <p class="mt-2 text-base font-normal text-gray-900"> $12 </p>
-            <p class="-mt-1 text-base font-light tracking-tighter text-gray-500"> Turkey, Istanbul</p>
-        </span>
-
-        <span class="mx-16 mt-10 2xl:mt-0">
-
-            <div class="bg-white product-card ">
-                <img src="../assets/ProductPhotos/colin-lloyd-DQcu4QOdj5c-unsplash.jpg" alt=""
-                    class="object-cover rounded-lg">
-            </div>
-
-            <p class="mt-3 text-base font-normal text-gray-900"> $105 </p>
-            <p class="-mt-1 text-base font-light tracking-tighter text-gray-500"> South London, UK</p>
-
-        </span>
-
-        <span class="mx-16 mt-10 2xl:mt-0">
-
-            <div class="product-card ">
-                <img src="../assets/ProductPhotos/kadarius-seegars-0FHNXqyqgg4-unsplash.jpg" alt=""
-                    class="object-cover rounded-lg">
-            </div>
-
-            <p class="mt-2 text-base font-normal text-gray-900"> $55 </p>
-            <p class="-mt-1 text-base font-light tracking-tighter text-gray-500"> Mumbai, India</p>
-        </span>
-
-    </section>
-
-    <!-- ROW 3 -->
-    <section class="flex flex-col items-center justify-center mt-10 2xl:flex-row">
-
-        <span class="mx-16 ">
-            <div class="product-card">
-                <img src="../assets/ProductPhotos/dose-juice-gvqjjYOlQHQ-unsplash.jpg" alt="Product Photo"
-                    class="object-cover rounded-lg">
-            </div>
-            <p class="mt-2 text-base font-normal text-gray-900"> $120 </p>
-            <p class="-mt-1 text-base font-light tracking-tighter text-gray-500"> New York, USA</p>
-        </span>
-
-        <span class="mx-16 mt-10 2xl:mt-0">
-
-            <div class="bg-white product-card ">
-                <img src="../assets/ProductPhotos/usama-akram-kP6knT7tjn4-unsplash.jpg" alt=""
-                    class="object-cover rounded-lg">
-            </div>
-
-            <p class="mt-3 text-base font-normal text-gray-900"> $75 </p>
-            <p class="-mt-1 text-base font-light tracking-tighter text-gray-500"> Paris, France</p>
-
-        </span>
-
-        <span class="mx-16 mt-10 2xl:mt-0">
-
-            <div class="product-card ">
-                <img src="../assets/ProductPhotos/mk-2-XoiBIpYkPJA-unsplash.jpg" alt="" class="object-cover rounded-lg">
-            </div>
-
-            <p class="mt-2 text-base font-normal text-gray-900"> $50 </p>
-            <p class="-mt-1 text-base font-light tracking-tighter text-gray-500"> New Delhi, India</p>
-        </span>
-
-    </section>
-
+        </div>
+    </div>
     <bottomFooter />
 </template>
 
@@ -188,9 +84,18 @@ export default {
         navbar,
         bottomFooter
     },
-    data(){
-        return{
-            id:3,
+    data() {
+        return {
+            images: [
+                "/images/ProductPhotos/colin-lloyd-DQcu4QOdj5c-unsplash.jpg",
+                "/images/ProductPhotos/colin-lloyd-DQcu4QOdj5c-unsplash.jpg",
+                "/images/ProductPhotos/colin-lloyd-DQcu4QOdj5c-unsplash.jpg"
+            ],
+            hotels: [
+                { name: "bruh", id: 1, price: 1232, src: "/images/ProductPhotos/colin-lloyd-DQcu4QOdj5c-unsplash.jpg" },
+                { name: "bruh2", id: 1, price: 123, src: "/images/ProductPhotos/colin-lloyd-DQcu4QOdj5c-unsplash.jpg" },
+                { name: "bruh3", id: 1, price: 13, src: "/images/ProductPhotos/colin-lloyd-DQcu4QOdj5c-unsplash.jpg" }
+            ]
         }
     }
 }
