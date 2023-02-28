@@ -43,6 +43,12 @@
             <div class="product-card">
                 <img :src="hotel.src" alt="Image">
             </div>
+            <div>
+                <b> {{ hotel.name }} </b>
+            </div>
+            <div>
+                {{ hotel.price }}
+            </div>
         </div>
     </div>
     <bottomFooter />
