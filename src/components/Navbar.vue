@@ -1,7 +1,7 @@
 <template>
-    <header class="animate-1 w-3/4 bg-green-200 m-auto">
+    <header class="animate-1 2xl:w-3/4 w-[100%] m-auto">
 
-        <nav class="flex justify-between mt-10">
+        <nav class="flex justify-between bg-green-200 mt-10">
             <div class="GBFont text-3xl text-black">GB</div>
 
             <div class="nav-links text-sm font-normal flex items-center text-gray-400 tracking-tight">
@@ -67,7 +67,7 @@ export default {
     display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1536px) {
 
     .nav-links,
     .GBFont,
