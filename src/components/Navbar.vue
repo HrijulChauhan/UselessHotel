@@ -1,19 +1,17 @@
 <template>
-    <header class="animate-1">
+    <header class="animate-1 w-3/4 bg-green-200 m-auto">
 
-        <nav class="flex justify-around mt-10">
+        <nav class="flex justify-between mt-10">
             <div class="GBFont text-3xl text-black">GB</div>
 
-            <div class="nav-links text-sm font-normal flex items-center text-gray-400 tracking-tight ">
-                
+            <div class="nav-links text-sm font-normal flex items-center text-gray-400 tracking-tight">
                 <slot name="first_nav"> Home </slot>
                 <slot name="second_nav"> About Us </slot>
                 <slot name="third_nav"> Contact </slot>
                 <slot name="fourth_nav"> Browse </slot>
-            
             </div>
 
-            <div class="Log text-lg font-semibold text-black"> Log in </div>
+            <div class="Log text-lg font-semibold text-black mt-1"> Log in </div>
         </nav>
 
         <nav class="animate-1">

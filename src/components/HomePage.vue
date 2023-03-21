@@ -534,14 +534,14 @@
   /* background-color: #c300ff; */
 }
 
-.vercel {
+/* .vercel { */
   /* background: linear-gradient(to right, #c300ff, #493240); */
   /* background-size: 200% auto;
   background-clip: text;
   -text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
-}
+/* } */
 </style>
 
 <script>
