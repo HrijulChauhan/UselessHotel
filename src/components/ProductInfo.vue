@@ -29,18 +29,16 @@
     </template>
   </Navbar>
 
-  <div class="m-auto bg-red-50 py-10 2xl:w-3/4">
-    <header class="text-3xl font-light tracking-tight text-gray-700 ml-10 mr-5">
-      Luxury Suite in Manhattan: The Plaza Hotel
-    </header>
-    <div class="ml-10 font-semibold text-blue-600">{{ hotelInformation[0].location }}</div>
+  <div class="m-auto py-10 2xl:w-3/4">
+    <header class="text-3xl font-light tracking-tight text-gray-700  mr-5 2xl:ml-0 ml-10">{{ hotelInformation[0].name }}</header>
+    <div class="font-semibold text-blue-600 2xl:ml-0 ml-10">{{ hotelInformation[0].location }}</div>
 
-    <section class="mt-8 flex flex-col 2xl:flex-row">
-      <div class="ml-10 md:mr-10">
-        <img :src="ImageSrc" alt="" class= "h-48 w-96 sm:w-[575px] sm:h-[300px] md:w-[100%] 2xl:w-[2000px] 2xl:h-[500px] object-cover" />
+    <section class="flex flex-col 2xl:flex-row">
+      <div class="md:mr-10 2xl:ml-0 ml-10 mt-5">
+        <img :src="ImageSrc" alt="" class= "h-48 w-96 sm:w-[575px] sm:h-[300px] md:w-[100%] 2xl:w-[3000px] 2xl:h-[500px] object-cover" />
       </div>
 
-      <div class="ml-10 mt-5 2xl:m-0">
+      <div class="2xl:mt-5 mt-3 2xl:-ml-0 ml-10">
         {{ hotelInformation[0].name }} <br />
         <strike>₹{{ hotelInformation[0].roomRate + 432 }}</strike> ₹{{
           hotelInformation[0].roomRate
@@ -117,9 +115,9 @@
         </figure>
 
         <!-- DESCRIPTION  -->
-        <article class="text-justify mr-10">
+        <article class="text-justify mr-10 2xl:mr-0">
           <b>Details </b>
-          <p class="w-96 sm:w-[575px] md:w-[100%]">
+          <p class="">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit 
              Incidunt modi atque asperiores placeat soluta? Itaque est debitis 
             corrupti alias nihil  assumenda voluptatem, non dolor. Recusandae veniam fugiat aliquid maxime iure?
