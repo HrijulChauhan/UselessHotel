@@ -16,7 +16,7 @@
           <a class="mr-0 px-3  hover:text-black" href="">About Us</a>
           <a class="mr-0 px-3 hover:text-black" href="">Contact Us</a>
           <a class="mr-0 px-3 hover:text-black" href="">Testimonials</a>
-          <a class="px-3 hover:text-black" href="">Locations</a>
+          <a class="px-3 hover:text-black" href="" @click="this.$router.push('/book')">Locations</a>
         </div>
 
         <div class="mr-0 pt-10 text-sm text-black">

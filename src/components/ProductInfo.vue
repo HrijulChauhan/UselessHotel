@@ -124,7 +124,7 @@
           </p>
         </article>
 
-        <button class="bg-black text-white rounded px-8 py-2 mt-5">
+        <button class="bg-black text-white rounded px-8 py-2 mt-5" @click="this.$router.replace('/reserve')">
           Reserve
         </button>
 

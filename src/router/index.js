@@ -4,6 +4,7 @@ import About from "../components/About.vue";
 import Form from "../components/Form.vue";
 import BookHotel from "../components/BookHotel.vue";
 import ProductInfo from "../components/ProductInfo.vue";
+import ReserveBooking from "../components/ReserveBooking.vue"
 
 const router = createRouter({
   history: createWebHistory(),
@@ -30,6 +31,10 @@ const router = createRouter({
       name: 'productInformation',
       component: ProductInfo,
     },
+    {
+      path: '/reserve',
+      component: ReserveBooking,
+    }
   ],
 });
 

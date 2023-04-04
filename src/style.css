@@ -21,6 +21,10 @@
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
 }
 
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
 .GBFont {
   font-family: "GroteskBold";
 }
@@ -28,15 +32,6 @@
 .log-in {
   font-weight: 500;
   font-size: 13px;
-  /* background-color: rgb(255, 255, 255); */
-  /* border: #ffffff 2px solid; */
-  /* color: #ffffff; */
-  /* border: 3px rgb(78, 31, 247) solid; */
-
-  /* some weird shit happening with padding here dont touch maybe LMAO */
-  /* padding-left: 25px; */
-  /* padding-right: 25px; */
-  /* border-radius: 5em; */
 }
 
 .discover {
