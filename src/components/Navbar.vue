@@ -1,7 +1,7 @@
 <template>
     <header class="2xl:w-3/4 w-[100%] m-auto">
 
-        <nav class="flex justify-between mt-10">
+        <nav class="flex justify-between pt-10">
             <div class="GBFont text-3xl text-black">GB</div>
 
             <div class="nav-links text-sm font-normal flex items-center text-gray-400 tracking-tight">
