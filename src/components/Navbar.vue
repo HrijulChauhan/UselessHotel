@@ -1,82 +1,67 @@
 <template>
-    <header class="2xl:w-3/4 w-[100%] m-auto">
+  <header class="m-auto w-[100%] 2xl:w-3/4">
+    <nav class="flex justify-between pt-10">
+      <div class="GBFont text-3xl text-black">GB</div>
 
-        <nav class="flex justify-between pt-10">
-            <div class="GBFont text-3xl text-black">GB</div>
+      <div class="nav-links flex items-center text-sm font-normal tracking-tight text-gray-400">
+        <slot name="first_nav"> Home </slot>
+        <slot name="second_nav"> About Us </slot>
+        <slot name="third_nav"> Contact </slot>
+        <slot name="fourth_nav"> Browse </slot>
+      </div>
 
-            <div class="nav-links text-sm font-normal flex items-center text-gray-400 tracking-tight">
-                <slot name="first_nav"> Home </slot>
-                <slot name="second_nav"> About Us </slot>
-                <slot name="third_nav"> Contact </slot>
-                <slot name="fourth_nav"> Browse </slot>
-            </div>
+      <div class="Log mt-1 text-lg font-semibold text-black">Log in</div>
+    </nav>
 
-            <div class="Log text-lg font-semibold text-black mt-1"> Log in </div>
-        </nav>
+    <nav class="animate-1">
+      <div class="hamburger z-20 ml-[10%] space-y-2" @click="showOptions = !showOptions">
+        <span class="block h-0.5 w-8 bg-gray-600"></span>
+        <span class="block h-0.5 w-8 bg-gray-600"></span>
+        <span class="block h-0.5 w-5 bg-gray-600"></span>
+      </div>
+    </nav>
+  </header>
 
-        <nav class="animate-1">
-            <div class="hamburger space-y-2 ml-10 z-20" @click="showOptions = ! showOptions">
-                <span class="block w-8 h-0.5 bg-gray-600"></span>
-                <span class="block w-8 h-0.5 bg-gray-600"></span>
-                <span class="block w-5 h-0.5 bg-gray-600"></span>
-            </div>
-        </nav>
+    <nav class="option flex flex-col bg-white pl-[10%] pt-10 text-5xl font-light tracking-tight" style="position: fixed; top: 0; left: 0" v-if="showOptions">
+      <span @click="showOptions = !showOptions">
+        <img src="../assets/close.svg" width="20" height="20" alt="" />
+      </span>
 
-    </header>
-
-
-    <nav class="option text-5xl pl-10 pt-10 flex flex-col bg-white font-light tracking-tight"
-        style="position:fixed; top: 0; left: 0;" v-if="showOptions">
-
-        <span @click="showOptions = !showOptions">
-            <img src="../assets/close.svg" width="20" height="20" alt="">
-        </span>
-
-
-        <slot name="first_hb"> Home </slot>
-        <slot name="second_hb"> About Us </slot>
-        <slot name="third_hb"> Contact </slot>
-
+      <slot name="first_hb"> Home </slot>
+      <slot name="second_hb"> About Us </slot>
+      <slot name="third_hb"> Contact </slot>
     </nav>
 
 </template>
-
-
 <script>
-
 export default {
-
-    data() {
-        return {
-            showOptions: false,
-        }
-    },
-
-}
-
+  data() {
+    return {
+      showOptions: false,
+    };
+  },
+};
 </script>
-
 
 <style scoped>
 .option {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .hamburger {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 1536px) {
+  .nav-links,
+  .GBFont,
+  .Log {
+    display: none;
+  }
 
-    .nav-links,
-    .GBFont,
-    .Log {
-        display: none;
-    }
-
-    .hamburger {
-        display: block;
-    }
+  .hamburger {
+    display: block;
+  }
 }
 </style>

@@ -38,7 +38,8 @@
         <span>
           <label for="EntryDate" class="mt-6 block text-sm font-medium leading-6 text-gray-900">Check-in Date</label>
 
-          <input type="date" name="" id="" class="mt-1 block w-80 rounded-sm border-0 py-2 pl-2 text-sm text-gray-400 shadow-sm outline-none ring-1 ring-inset ring-slate-200 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600" />
+          <input type="date" v-model="entryDate" name="" id="" class="mt-1 block w-80 rounded-sm border-0 py-2 pl-2 text-sm text-gray-400 shadow-sm outline-none ring-1 ring-inset ring-slate-200 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600" />
+          {{ entryDate }}
         </span>
 
         <!-- Enter Exit Date -->
@@ -54,6 +55,20 @@
   </body>
 </template>
 
-<script></script>
+<script>
+export default{
+  data(){
+    return{
+      entryDate: ''
+    }
+  },
+
+  computed: {
+    entryDateType(){
+      return typeof this.entryDate;
+    }
+  }
+}
+</script>
 
 <style></style>
