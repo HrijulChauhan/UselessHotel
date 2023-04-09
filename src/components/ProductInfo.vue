@@ -63,6 +63,16 @@
 <script>
 import axios from "axios";
 import Navbar from "./Navbar.vue";
+import { ref, onMounted } from "vue";
+import { supabase } from "../lib/supabaseClient";
+
+const hotel = ref([])
+
+async function getCountries() {
+  const { data } = await supabase.from("hotel").select();
+  hotel.value = data;
+  console.log(hotel.value)
+}
 
 export default {
   components: {
@@ -89,8 +99,9 @@ export default {
         console.log(error);
       });
   },
-
-  // mounted() {
-  // },
 };
+
+// onMounted(() => {
+//   getCountries();
+// })
 </script>
