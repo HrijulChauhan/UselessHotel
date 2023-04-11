@@ -59,17 +59,16 @@
       </form>
     </section>
   </body>
-  <popup v-if="mistake" message="mistakeMsg" mistake="mistake"/>
+  <popup v-if="mistake" :message="mistakeMsg" @click="mistake = !mistake" />
 </template>
 
 <script>
-import axios from "axios";
 import { supabase } from "/src/lib/supabaseClient.js";
-import popup from "../components/NotificationPopup.vue"
+import popup from "../components/NotificationPopup.vue";
 
 export default {
   components: {
-    popup
+    popup,
   },
   data() {
     return {
@@ -82,8 +81,8 @@ export default {
       roomRate: 0.0,
       hotelName: "",
 
-      mistake : false,
-      mistakeMsg : 'hi',
+      mistakeMsg: "hi",
+      mistake: false,
     };
   },
 
@@ -108,19 +107,43 @@ export default {
     },
 
     async postToApi() {
-      if (this.entryDate > this.exitDate) { this.mistake = true; return;}
-      const { error, status } = await supabase.from("booking").insert({ name: this.name, email: this.email, entryDate: this.entryDate, exitDate: this.exitDate, location: this.location, numberOfRooms: this.numberOfRooms, roomRate: this.roomRate, hotelName: this.hotelName });
+      const date = new Date();
 
-      if (error) {
-        console.log(error);
+      let day = date.getDate();
+      let month = (date.getMonth() + 1).toString().padStart(2, '0');
+      let year = date.getFullYear();
+
+      let currentDate = `${year}-${month}-${day}`;
+
+      // checking invalid details
+      if (this.entryDate.length == 0 || this.exitDate.length == 0 || this.name.length == 0 || this.email.length == 0 || this.location.length == 0) {
+        this.mistake = true;
+        this.mistakeMsg = "Please fill the form completely";
+      } else if (this.numberOfRooms <= 0) {
+        this.mistake = true;
+        this.mistakeMsg = "Please enter number of rooms";
+        return;
+      } else if (currentDate > this.entryDate) {
+        this.mistake = true;
+        this.mistakeMsg = "Please enter valid entry date";
+        console.log(currentDate)
+        return;
+      } else if (this.entryDate > this.exitDate) {
+        this.mistake = true;
+        this.mistakeMsg = "Please enter valid checkout date";
+        return;
       } else {
-        console.log(status);
+        const { error, status } = await supabase.from("booking").insert({ name: this.name, email: this.email, entryDate: this.entryDate, exitDate: this.exitDate, location: this.location, numberOfRooms: this.numberOfRooms, roomRate: this.roomRate, hotelName: this.hotelName });
+        if (error) {
+          console.log(error);
+        } else {
+          console.log(status);
+        }
       }
     },
   },
 
-  computed: {
-  },
+  computed: {},
 };
 </script>
 

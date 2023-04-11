@@ -210,8 +210,8 @@
   animation: move 1.25s ease-in-out;
 }
 
-.ReverseAnimate-1{
-  animation: Reversemove 1s ease-in-out;
+.ReverseAnimate-0_5{
+  animation: Reversemove 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .animate-1_5{
