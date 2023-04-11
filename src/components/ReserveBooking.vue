@@ -59,12 +59,18 @@
       </form>
     </section>
   </body>
+  <popup v-if="mistake" message="mistakeMsg" mistake="mistake"/>
 </template>
 
 <script>
 import axios from "axios";
+import { supabase } from "/src/lib/supabaseClient.js";
+import popup from "../components/NotificationPopup.vue"
 
 export default {
+  components: {
+    popup
+  },
   data() {
     return {
       name: "",
@@ -75,6 +81,9 @@ export default {
       numberOfRooms: 0,
       roomRate: 0.0,
       hotelName: "",
+
+      mistake : false,
+      mistakeMsg : 'hi',
     };
   },
 
@@ -98,31 +107,19 @@ export default {
       }
     },
 
-    postToApi() {
-      axios
-        .post("http://localhost:8080/api/v1/booking", {
-          name: this.name,
-          email: this.email,
-          entryDate: this.entryDate,
-          exitDate: this.exitDate,
-          hotelName: this.hotelName,
-          numberOfRooms: this.numberOfRooms,
-          roomRate: this.roomRate,
-        })
-        .then((response) => {
-          console.log(response.data);
-          this.$router.push("/")
-        })
-        .catch((error) => {
-          console.error(error);
-        });
+    async postToApi() {
+      if (this.entryDate > this.exitDate) { this.mistake = true; return;}
+      const { error, status } = await supabase.from("booking").insert({ name: this.name, email: this.email, entryDate: this.entryDate, exitDate: this.exitDate, location: this.location, numberOfRooms: this.numberOfRooms, roomRate: this.roomRate, hotelName: this.hotelName });
+
+      if (error) {
+        console.log(error);
+      } else {
+        console.log(status);
+      }
     },
   },
 
   computed: {
-    entryDateType() {
-      return typeof this.roomRate;
-    },
   },
 };
 </script>

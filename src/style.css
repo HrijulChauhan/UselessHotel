@@ -192,12 +192,26 @@
   }
 }
 
+@keyframes Reversemove {
+  from {
+    opacity: 0%;transform: translateY(75px);
+  }
+
+  to {
+    opacity: 100%;transform: translateY(0px);
+  }
+}
+
 .animate-1{
   animation: move 1s ease-in-out;
 }
 
 .animate-1_25{
   animation: move 1.25s ease-in-out;
+}
+
+.ReverseAnimate-1{
+  animation: Reversemove 1s ease-in-out;
 }
 
 .animate-1_5{
