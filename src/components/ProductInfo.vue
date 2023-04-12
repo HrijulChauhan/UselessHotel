@@ -4,6 +4,7 @@ import { supabase } from "../lib/supabaseClient";
 import { useRouter, useRoute } from "vue-router";
 
 const hotelInformation = ref([]);
+const router = useRouter();
 const route = useRoute();
 var ImageSrc = ref('')
 
@@ -18,6 +19,7 @@ onBeforeMount(() => {
   getCountries();
 });
 </script>
+
 
 <template>
   <body class="h-screen w-screen bg-slate-50" >
@@ -40,7 +42,7 @@ onBeforeMount(() => {
         <div class="pt-3">
           <span class="text-sm font-semibold">Description</span>
           <p class="text-justify text-sm leading-5 tracking-normal">{{ hotelInformation[0].description }}</p>
-          <button class="mt-5 bg-black px-8 py-2 text-base text-white" @click="this.$router.push('/reserve')">Reserve</button>
+          <button class="mt-5 bg-black px-8 py-2 text-base text-white" @click="router.push('/reserve')">Reserve</button>
         </div>
       </section>
     </div>
