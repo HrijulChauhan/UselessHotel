@@ -1,0 +1,11 @@
+{
+    "routes": [
+      { "src": "/", "dest": "/components/HomePage.vue" },
+      { "src": "/about", "dest": "/components/About.vue" },
+      { "src": "/form", "dest": "/components/Form.vue" },
+      { "src": "/Book", "dest": "/components/BookHotel.vue" },
+      { "src": "/product/:id", "dest": "/components/ProductInfo.vue" },
+      { "src": "/reserve", "dest": "/components/ReserveBooking.vue" }
+    ]
+  }
+  
