@@ -40,7 +40,7 @@ onBeforeMount(() => {
         <div class="pt-3">
           <span class="text-sm font-semibold">Description</span>
           <p class="text-justify text-sm leading-5 tracking-normal">{{ hotelInformation[0].description }}</p>
-          <button class="mt-5 bg-black px-8 py-2 text-base text-white" @click="this.$router.replace('/reserve')">Reserve</button>
+          <button class="mt-5 bg-black px-8 py-2 text-base text-white" @click="this.$router.push('/reserve')">Reserve</button>
         </div>
       </section>
     </div>
