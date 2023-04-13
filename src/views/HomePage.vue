@@ -545,7 +545,7 @@
 </style>
 
 <script>
-import navbar from './Navbar.vue'
+import navbar from '../components/Navbar.vue'
 
 export default {
 

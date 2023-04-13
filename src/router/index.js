@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomePage from "../components/HomePage.vue";
-import About from "../components/About.vue";
-import Form from "../components/Form.vue";
+import HomePage from "../views/HomePage.vue";
+import About from "../views/About.vue";
+import Form from "../views/Form.vue";
 import BookHotel from "../components/BookHotel.vue";
-import ProductInfo from "../components/ProductInfo.vue";
-import ReserveBooking from "../components/ReserveBooking.vue"
+import ProductInfo from "../views/ProductInfo.vue";
+import ReserveBooking from "../views/ReserveBooking.vue"
 
 const router = createRouter({
   history: createWebHistory(),
