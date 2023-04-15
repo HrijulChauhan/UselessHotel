@@ -30,7 +30,7 @@ onBeforeMount(() => {
     </div>
 
     <div class="m-auto mt-4 w-4/5 xl:flex 2xl:w-3/4">
-      <img :src="ImageSrc" alt="" class="h-96 w-full object-cover shadow-lg xl:w-1/2 2xl:h-[500px]" />
+      <img :src="ImageSrc" alt="" class="h-96 w-full object-cover shadow-lg xl:w-1/2 2xl:h-[500px] rounded" />
 
       <!-- Information -->
       <section class="xl:w-1/2 xl:pl-5">

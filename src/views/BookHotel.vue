@@ -43,7 +43,7 @@
     <div class="2xl:flex justify-between">
       <div v-for="hotel in hotels.slice(0, 3)" class="">
         <router-link :to="{ name: 'productInformation', params: { id: hotel.id } }">
-          <img :src="hotel.src" alt="Image" class="mt-5 h-96 w-full 2xl:w-96 object-center object-cover" />
+          <img :src="hotel.src" alt="Image" class="mt-5 h-96 w-full 2xl:w-96 object-center object-cover rounded shadow-2xl hover:shadow-green-200 duration-500" />
         </router-link>
 
         <div class="mt-1 text-sm font-medium tracking-normal text-gray-900">${{ hotel.price }}</div>
@@ -56,7 +56,7 @@
     <span class="block 2xl:flex justify-between">
       <div v-for="hotel in hotels.slice(3, 6)">
         <router-link :to="{ name: 'productInformation', params: { id: hotel.id } }">
-          <img :src="hotel.src" alt="Image" class="mt-5 h-96 w-full 2xl:w-96 object-cover" />
+          <img :src="hotel.src" alt="Image" class="mt-5 h-96 w-full 2xl:w-96 object-cover rounded shadow-2xl hover:shadow-green-200 duration-500" />
         </router-link>
 
         <div class="mt-1 text-sm font-medium tracking-normal text-gray-900">${{ hotel.price }}</div>
@@ -69,8 +69,8 @@
 </template>
 
 <script>
-import navbar from "./Navbar.vue";
-import bottomFooter from "./Footer.vue";
+import navbar from "../components/Navbar.vue";
+import bottomFooter from "../components/Footer.vue";
 
 export default {
   components: {
