@@ -11,15 +11,22 @@
     <button @click="loginFunctionality" type="" class="m-auto mt-5 flex justify-center rounded-md bg-indigo-600 px-10 py-2 text-sm font-medium text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Login</button>
     <button @click="session" type="" class="m-auto mt-5 flex justify-center rounded-md bg-indigo-600 px-10 py-2 text-sm font-medium text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get session</button>
     <button @click="logoutUser" type="" class="m-auto mt-5 flex justify-center rounded-md bg-indigo-600 px-10 py-2 text-sm font-medium text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Logout</button>
+  
+  
+    <popup message="Invalid Credentials" v-if="mistake" @click="mistake = !mistake"/>
   </body>
+
+
 </template>
 
 <script setup>
+import popup from "../components/NotificationPopup.vue";
 import { supabase } from "../lib/supabaseClient";
 import { ref } from "vue";
 
 const email = ref("");
 const password = ref("");
+const mistake = ref(false)
 const userSession = ref(null);
 
 async function loginFunctionality() {
@@ -29,6 +36,7 @@ async function loginFunctionality() {
   });
 
   if (error) {
+    mistake.value = true;
     console.log(error.message);
   } else {
     console.log(data);
