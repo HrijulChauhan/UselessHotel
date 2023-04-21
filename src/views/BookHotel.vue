@@ -33,17 +33,26 @@
     <!-- using the SPAN tag for some reason doesnt apply the margin top -->
     <div class="mt-1 mb-6 text-center text-2xl font-medium tracking-tight text-gray-900">Browse Hotels</div>
 
-    <label for="" class="mb-1 block text-sm font-medium text-gray-900">Filter By</label>
-    <select name="Filter By" id="" class="mb-5 rounded-sm bg-slate-200 px-4 py-1 text-sm shadow-sm outline-none ring-1 ring-slate-300" v-model="selectedOption" @change="FilterByPrice(selectedOption)">
-      <option disabled value="" class="text-sm">Select one</option>
-      <option value="ascending" class="text-sm text-slate-900">Price (Ascending)</option>
-      <option value="descending" class="text-sm text-slate-900">Price (Descending)</option>
-    </select>
+    <div class="flex justify-between">
+    
+    <div>
+      <label for="" class="mb-1 block text-sm font-medium text-gray-900">Filter By</label>
+      <select name="Filter By" id="" class="mb-5 rounded-sm bg-slate-200 px-4 py-1 text-sm shadow-sm outline-none ring-1 ring-slate-300" v-model="selectedOption" @change="FilterByPrice(selectedOption)">
+        <option disabled value="" class="text-sm">Select one</option>
+        <option value="ascending" class="text-sm text-slate-900">Price (Ascending)</option>
+        <option value="descending" class="text-sm text-slate-900">Price (Descending)</option>
+      </select>
+    </div>
 
-    <div class="2xl:flex justify-between">
+      <div class="">
+        <img src="https://imgur.com/FL1hP1U.png" alt="your-image-description" class="rounded-full w-10 h-10 mt-3" @click="this,$router.push('/setting')">
+      </div>
+    </div>
+
+    <div class="justify-between 2xl:flex">
       <div v-for="hotel in hotels.slice(0, 3)" class="">
         <router-link :to="{ name: 'productInformation', params: { id: hotel.id } }">
-          <img :src="hotel.src" alt="Image" class="mt-5 h-96 w-full 2xl:w-96 object-center object-cover rounded shadow-2xl hover:shadow-green-200 duration-500" />
+          <img :src="hotel.src" alt="Image" class="mt-5 h-96 w-full rounded object-cover object-center shadow-2xl duration-500 hover:shadow-green-200 2xl:w-96" />
         </router-link>
 
         <div class="mt-1 text-sm font-medium tracking-normal text-gray-900">${{ hotel.price }}</div>
@@ -53,10 +62,10 @@
   </div>
 
   <div class="m-auto mt-10 w-4/5">
-    <span class="block 2xl:flex justify-between">
+    <span class="block justify-between 2xl:flex">
       <div v-for="hotel in hotels.slice(3, 6)">
         <router-link :to="{ name: 'productInformation', params: { id: hotel.id } }">
-          <img :src="hotel.src" alt="Image" class="mt-5 h-96 w-full 2xl:w-96 object-cover rounded shadow-2xl hover:shadow-green-200 duration-500" />
+          <img :src="hotel.src" alt="Image" class="mt-5 h-96 w-full rounded object-cover shadow-2xl duration-500 hover:shadow-green-200 2xl:w-96" />
         </router-link>
 
         <div class="mt-1 text-sm font-medium tracking-normal text-gray-900">${{ hotel.price }}</div>
@@ -71,6 +80,7 @@
 <script>
 import navbar from "../components/Navbar.vue";
 import bottomFooter from "../components/Footer.vue";
+import {useRouter} from 'vue-router'
 
 export default {
   components: {
@@ -136,6 +146,10 @@ export default {
     greet() {
       console.log("bruh");
     },
+
+    goToSettings(){
+      this.$router.push('/setting')
+    }
   },
 };
 </script>

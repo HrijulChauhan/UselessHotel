@@ -6,6 +6,7 @@ import BookHotel from "../views/BookHotel.vue";
 import ProductInfo from "../views/ProductInfo.vue";
 import ReserveBooking from "../views/ReserveBooking.vue"
 import login from "../views/login.vue"
+import setting from '../views/settings.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -39,6 +40,10 @@ const router = createRouter({
     {
       path: '/login',
       component: login
+    },
+    {
+      path: '/setting',
+      component: setting
     }
   ],
 });
