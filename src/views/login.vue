@@ -1,20 +1,23 @@
 <template>
   <body class="h-screen w-screen bg-slate-50">
-    <span class="pt-20 flex justify-center text-3xl tracking-tight font-semibold text-gray-900"> Login to your account </span>
-    <div class="flex justify-center">
-      <div class="mt-16">
-        <input type="text" name="email" id="" v-model="email" placeholder="Email address" class="mt-0 block w-96 rounded-md rounded-b-none border-[0.5px] border-gray-400 py-2 pl-3 text-base outline-none ring-1 ring-inset ring-slate-200 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600" />
-        <input type="password" name="password" id="" v-model="password" placeholder="Password" class="mt-0 block w-96 rounded-md rounded-t-none border-[0.5px] border-t-0 border-gray-400 py-2 pl-3 text-base outline-none ring-1 ring-inset ring-slate-200 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600" />
+    <section class="relative top-1/2 mx-auto  h-1/2 w-1/4 -translate-y-1/2  bg-white shadow-2xl">
+      <span class="flex justify-center pt-24 text-3xl font-semibold tracking-tight text-gray-900"> Login to your account </span>
+      <div class="flex justify-center">
+        <div class="mt-10">
+          <span class="text-sm font-semibold text-gray-600">Email Address </span>
+          <input type="text" name="email" id="" v-model="email" placeholder="" class="mt-2 mb-5 block w-96 rounded border-[0.5px] border-gray-400 py-2 pl-3 text-base outline-none ring-1 ring-inset ring-slate-200 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600" />
+          <span class="text-sm font-semibold text-gray-600">Password </span>
+          <input type="password" name="password" id="" v-model="password" placeholder="" class="mt-2 block w-96 rounded border-[0.5px] border-gray-400 py-2 pl-3 text-base outline-none ring-1 ring-inset ring-slate-200 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600" />
+        </div>
       </div>
-    </div>
 
-    <button @click="loginFunctionality" type="" class="button-10 m-auto mt-5">Login</button>
-  
-  
-    <popup message="Invalid Credentials" v-if="mistake" @click="mistake = !mistake"/>
+      <div class="flex justify-center pt-2">
+        <button @click="loginFunctionality" type="" class="mt-7 block w-96 justify-center rounded bg-indigo-500 py-3 font-semibold text-white rounded">Login</button>
+      </div>
+    </section>
+
+    <popup message="Invalid Credentials" v-if="mistake" @click="mistake = !mistake" />
   </body>
-
-
 </template>
 
 <script setup>
@@ -25,7 +28,7 @@ import { useRouter } from "vue-router";
 
 const email = ref("");
 const password = ref("");
-const mistake = ref(false)
+const mistake = ref(false);
 const userSession = ref(null);
 const router = useRouter();
 
@@ -40,7 +43,7 @@ async function loginFunctionality() {
     console.log(error.message);
   } else {
     console.log(data);
-    router.push('/book')
+    router.push("/book");
   }
 }
 
@@ -54,13 +57,12 @@ async function session() {
     console.log(userSession.value.session.user.email);
     console.log(userSession.value.session.user.role);
   }
-};
-
-async function logoutUser(){
-    const {error} = await supabase.auth.signOut();
-    console.log("in logout")
 }
 
+async function logoutUser() {
+  const { error } = await supabase.auth.signOut();
+  console.log("in logout");
+}
 </script>
 
 <style>
@@ -69,13 +71,13 @@ async function logoutUser(){
   flex-direction: column;
   align-items: center;
   padding: 6px 32px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
   border-radius: 6px;
   border: none;
 
   color: #fff;
-  background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
-   background-origin: border-box;
+  background: linear-gradient(180deg, #4b91f7 0%, #367af6 100%);
+  background-origin: border-box;
   box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
   user-select: none;
   -webkit-user-select: none;
