@@ -1,20 +1,22 @@
 <template>
   <body class="h-screen w-screen bg-slate-50">
-    <section class="relative top-1/2 mx-auto  h-1/2 w-1/4 -translate-y-1/2  bg-white shadow-2xl">
+    
+    <div class="relative top-1/2 mx-auto h-1/2 w-1/4 -translate-y-1/2 bg-white shadow-2xl">
+      
       <span class="flex justify-center pt-24 text-3xl font-semibold tracking-tight text-gray-900"> Login to your account </span>
-      <div class="flex justify-center">
+      
+      <div class="flex flex-col items-center justify-center">
         <div class="mt-10">
           <span class="text-sm font-semibold text-gray-600">Email Address </span>
           <input type="text" name="email" id="" v-model="email" placeholder="" class="mt-2 mb-5 block w-96 rounded border-[0.5px] border-gray-400 py-2 pl-3 text-base outline-none ring-1 ring-inset ring-slate-200 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600" />
           <span class="text-sm font-semibold text-gray-600">Password </span>
           <input type="password" name="password" id="" v-model="password" placeholder="" class="mt-2 block w-96 rounded border-[0.5px] border-gray-400 py-2 pl-3 text-base outline-none ring-1 ring-inset ring-slate-200 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600" />
+          <div class="pt-7 text-sm font-light">No account? <a href="javascript:void(0)"><span class="text-gray-600 font-semibold" @click="RouteToRegister"> Sign-Up</span></a> instead</div>
         </div>
+        <button @click="loginFunctionality" type="" class="mt-2 w-96 rounded bg-indigo-500 py-3 font-semibold text-white">Login</button>
       </div>
 
-      <div class="flex justify-center pt-2">
-        <button @click="loginFunctionality" type="" class="mt-7 block w-96 justify-center rounded bg-indigo-500 py-3 font-semibold text-white rounded">Login</button>
-      </div>
-    </section>
+    </div>
 
     <popup message="Invalid Credentials" v-if="mistake" @click="mistake = !mistake" />
   </body>
@@ -62,6 +64,10 @@ async function session() {
 async function logoutUser() {
   const { error } = await supabase.auth.signOut();
   console.log("in logout");
+}
+
+function RouteToRegister(){
+  router.push('/register')
 }
 </script>
 
