@@ -19,11 +19,11 @@
     </div>
   </header>
 
-  <section class="mt-[32rem]">
+  <section class="mt-[36rem]">
     <p class="ITC text-white text-9xl pl-20">The best way to stay <span class="ITC underline">happy</span> <br>
       for a dream <span class="ITC underline">vacation</span>
     </p>
-    <button class="bg-white rounded-full ml-20 mt-24 IBM text-base px-10 py-4">Explore More</button>
+    <button class="bg-white rounded-full ml-20 mt-28 IBM text-base px-10 py-4">Explore More</button>
   </section>
   <div class="mt-96">hi</div>
 
