@@ -1,67 +1,22 @@
 <template>
-  <header class="m-auto w-[100%] 2xl:w-3/4">
-    <nav class="flex justify-between pt-10">
-      <div class="GBFont text-3xl text-black">GB</div>
+  <header class="bg-blue-400 IBM text-center text-white py-1 text-xs tracking-tight font-medium">CHECK OUT PREMIER HOTELS FOR THE BEST OF OUR COLLECTIONS
+  </header>
+  <header class="grid h-28 md:h-14 grid-cols-3 grid-rows-1 items-center text-base text-white transition-colors delay-150 ease-in-out hover:bg-amber-50 hover:text-black">
+    
+    <div class="flex justify-start font-light IBM invisible md:visible">
+      <div class="pl-20 pr-10 IBM">Browse</div>
+      <div class="IBM">Premier</div>
+    </div>
+    
 
-      <div class="nav-links flex items-center text-sm font-normal tracking-tight text-gray-400">
-        <slot name="first_nav"> Home </slot>
-        <slot name="second_nav"> About Us </slot>
-        <slot name="third_nav"> Contact </slot>
-        <slot name="fourth_nav"> Browse </slot>
-      </div>
-
-      <div class="Log mt-1 text-lg font-semibold text-black">Log in</div>
-    </nav>
-
-    <nav class="animate-1">
-      <div class="hamburger z-20 ml-[10%] space-y-2" @click="showOptions = !showOptions">
-        <span class="block h-0.5 w-8 bg-gray-600"></span>
-        <span class="block h-0.5 w-8 bg-gray-600"></span>
-        <span class="block h-0.5 w-5 bg-gray-600"></span>
-      </div>
-    </nav>
+    <div class="text-center">
+      <span class="ITC text-3xl font-medium">Grand Budapest</span>
+    </div>
+    
+    <div class="text-end invisible md:visible">
+      <div class="pr-20 IBM font-light">Login</div>
+    </div>
   </header>
 
-    <nav class="option flex flex-col bg-white pl-[10%] pt-10 text-5xl font-light tracking-tight" style="position: fixed; top: 0; left: 0" v-if="showOptions">
-      <span @click="showOptions = !showOptions">
-        <img src="../assets/close.svg" width="20" height="20" alt="" />
-      </span>
-
-      <slot name="first_hb"> Home </slot>
-      <slot name="second_hb"> About Us </slot>
-      <slot name="third_hb"> Contact </slot>
-    </nav>
-
 </template>
-<script>
-export default {
-  data() {
-    return {
-      showOptions: false,
-    };
-  },
-};
-</script>
-
-<style scoped>
-.option {
-  height: 100%;
-  width: 100%;
-}
-
-.hamburger {
-  display: none;
-}
-
-@media (max-width: 1536px) {
-  .nav-links,
-  .GBFont,
-  .Log {
-    display: none;
-  }
-
-  .hamburger {
-    display: block;
-  }
-}
-</style>
+<script></script>

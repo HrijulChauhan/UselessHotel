@@ -1,32 +1,16 @@
 <template>
-  <video src="/bgvideo.mp4" autoplay loop muted class="absolute top-0 bottom-0 -z-10 w-[100%] object-cover h-[110%] overflow-hidden" alt="family-video"></video>
+  <video src="/bgvideo.mp4" autoplay loop muted class="absolute top-0 bottom-0 -z-10 h-[85%] w-[100%] overflow-hidden object-cover md:h-[110%]" alt="family-video"></video>
 
-  <header class="bg-blue-400 IBM text-center text-white py-1 text-xs tracking-tight font-medium">CHECK OUT PREMIER HOTELS FOR THE BEST OF OUR COLLECTIONS
-  </header>
-  <header class="grid h-14 grid-cols-3 grid-rows-1 items-center text-base text-white transition-colors delay-150 ease-in-out hover:bg-amber-50 hover:text-black">
-    
-    <div class="flex justify-start font-light IBM">
-      <div class="pl-20 pr-10 IBM">Browse</div>
-      <div class="IBM">Premier</div>
-    </div>
-    
-    <div class="text-center">
-      <span class="ITC text-3xl font-medium">Grand Budapest</span>
-    </div>
-    
-    <div class="text-end">
-      <div class="pr-20 IBM font-light">Login</div>
-    </div>
-  </header>
+  <navbar />
 
-  <section class="mt-[36rem]">
-    <p class="ITC text-white text-9xl pl-20">The best way to stay <span class="ITC underline">happy</span> <br>
+  <section class="mt-[32rem] sm:mt-[30rem] md:mt-[42rem] lg:mt-[40rem] xl:mt-[36rem]">
+    <p class="ITC text-5xl text-white md:pl-20 text-center md:text-left md:text-7xl lg:text-8xl xl:text-9xl">
+      The best way to stay <span class="ITC underline">happy</span> <br />
       for a dream <span class="ITC underline">vacation</span>
     </p>
-    <button class="bg-white rounded-full ml-20 mt-28 IBM text-base px-10 py-4">Explore More</button>
+    <button class="IBM mx-auto mt-10 text-center flex rounded-full bg-white px-20 py-4 text-base md:text-left md:ml-20 md:mt-28">Explore More</button>
   </section>
   <div class="mt-96">hi</div>
-
 </template>
 
 <style>
@@ -42,18 +26,19 @@
 .transition-colors {
   transition-duration: 500ms;
 }
-.playfair{
-  font-family: 'Playfair Display', serif;
+.playfair {
+  font-family: "Playfair Display", serif;
 }
-.ITC{
+.ITC {
   font-family: "ITCLightNarrow";
 }
-.IBM{
-  font-family: 'IBM Plex Mono', monospace;
+.IBM {
+  font-family: "IBM Plex Mono", monospace;
 }
 </style>
 
-<script>
+<script setup>
+import navbar from "../components/Navbar.vue";
 // 1862 width
 // 953 height
 </script>
