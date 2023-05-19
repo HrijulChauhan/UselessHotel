@@ -17,6 +17,11 @@
   src: url(./assets/OTF/CabinetGrotesk-Regular.otf);
 }
 
+@font-face {
+  font-family: ITCLightNarrow;
+  src: url(./assets/OTF/ITCGaramondStdLightNarrow.otf);
+}
+
 * {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
 }

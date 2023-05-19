@@ -67,7 +67,7 @@
   }
   
   function RouteToLogin(){
-    router.push('/login')
+    router.push('/login ')
   }
   </script>
   
