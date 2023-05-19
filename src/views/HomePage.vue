@@ -3,7 +3,7 @@
 
   <navbar />
 
-  <section class="mt-[32rem] sm:mt-[30rem] md:mt-[42rem] lg:mt-[40rem] xl:mt-[36rem]">
+  <section class="mt-[20rem] sm:mt-[30rem] md:mt-[42rem] lg:mt-[40rem] xl:mt-[36rem]">
     <p class="ITC text-5xl text-white md:pl-20 text-center md:text-left md:text-7xl lg:text-8xl xl:text-9xl">
       The best way to stay <span class="ITC underline">happy</span> <br />
       for a dream <span class="ITC underline">vacation</span>
