@@ -1,20 +1,27 @@
 <template>
-  <video src="/bgvideo.mp4" autoplay loop muted class="absolute top-0 bottom-0 -z-10 h-[85%] w-[100%] overflow-hidden object-cover md:h-[100%]" ></video>
+  
+  <body class="relative h-[90vh] bg-black bg-opacity-25">
+  
+    <video src="/bgvideo.mp4" autoplay loop muted class="absolute top-0 left-0 -z-10 h-[90vh] w-full object-cover"></video>
+    <navbar />
 
-  <!-- <video autoplay loop muted>
-    <source src="/bgvideo.mp4" type="video/mp4" class="absolute top-0 bottom-0 -z-10 h-[85%] w-[100%] overflow-hidden object-cover md:h-[100%]">
-  </video> -->
+    <!-- Main Lockup -->
+    <div class="absolute bottom-10 left-0 right-0 text-center md:text-left">
+      
+      <p class="ITC text-6xl text-left text-white w-[85%] mx-auto md:pl-20 md:w-full md:text-left md:text-7xl lg:text-8xl xl:text-9xl">
+        The best way to stay <span class="ITC underline">happy</span> <br />
+        for a dream <span class="ITC underline">vacation</span>
+      </p>
+      
+      <p class="IBM  text-sm text-left text-gray-200 mt-7 w-[85%] tracking-wider leading-relaxed mx-auto md:hidden">
+        Experience uncomprimising luxury, with none of the stress
+      </p>
+      
+      <button class="IBM mt-7 rounded-full font-medium bg-white py-3 w-[85%] md:w-72 md:ml-20">EXPLORE MORE</button>
+    </div>
+  
+  </body>
 
-  <navbar />  
-
-  <section class="mt-[0em] sm:mt-[30rem] md:mt-[32rem]">
-    <p class="ITC text-4xl text-white md:pl-20 text-center md:text-left md:text-7xl lg:text-8xl xl:text-9xl">
-      The best way to stay <span class="ITC underline">happy</span> <br />
-      for a dream <span class="ITC underline">vacation</span>
-    </p>
-    <button class="IBM mx-auto mt-10 text-center flex rounded-full bg-white px-20 py-4 text-base md:text-left md:ml-20 md:mt-16 font-medium">EXPLORE MORE</button>
-  </section>
-  <div class="mt-96">hi</div>
 </template>
 
 <style>
@@ -38,6 +45,10 @@
 }
 .IBM {
   font-family: "IBM Plex Mono", monospace;
+}
+
+.main-container {
+  height: 70vh;
 }
 </style>
 

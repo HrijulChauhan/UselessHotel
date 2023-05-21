@@ -1,22 +1,16 @@
 <template>
-  <header class="bg-blue-400 IBM text-center text-white py-1 text-xs tracking-tight font-medium">CHECK OUT PREMIER HOTELS FOR THE BEST OF OUR COLLECTIONS
-  </header>
-  <header class="grid mb-64 py-5 md:py-0 md:mb-0 md:h-14 grid-cols-3 grid-rows-1 items-center text-base text-white transition-colors delay-150 ease-in-out hover:bg-amber-50 hover:text-black">
-    
-    <div class="flex justify-start font-light IBM invisible md:visible">
-      <div class="pl-20 pr-10 IBM">Browse</div>
+  <!-- Promo header -->
+  <header class="IBM bg-blue-400 py-1 items-center text-center text-sm font-medium tracking-tight text-white">NEW YORK LOCATIONS NOW AVAILABLE</header>
+
+  <header class="grid grid-cols-3 grid-rows-1 items-center h-[15vh] text-base text-white transition-colors delay-150 ease-in-out hover:bg-amber-50 hover:text-black md:mb-0 md:h-14 md:py-0">
+    <div class="IBM invisible flex justify-start font-light md:visible">
+      <div class="IBM pl-20 pr-10">Browse</div>
       <div class="IBM">Premier</div>
     </div>
-    
 
-    <div class="text-center">
-      <span class="ITC text-3xl font-medium">Grand Budapest</span>
-    </div>
-    
-    <div class="text-end invisible md:visible">
-      <div class="pr-20 IBM font-light">Login</div>
-    </div>
+      <span class="ITC text-center text-3xl font-medium">Grand Budapest</span>
+
+    <div class="IBM invisible pr-20 text-end font-light md:visible">Login</div>
   </header>
-
 </template>
 <script></script>
