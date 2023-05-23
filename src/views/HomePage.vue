@@ -10,12 +10,13 @@
         for a dream <span class="ITC underline">vacation</span>
       </p>
 
-      <p class="IBM mx-auto mt-7 w-[85%] text-left text-sm leading-relaxed tracking-wider md:hidden">Experience uncomprimising luxury, with none of the stress</p>
+      <p class="IBM mx-auto mt-7 w-[85%] text-left text-sm leading-relaxed tracking-wider text-gray-200 md:hidden">Experience uncomprimising luxury, with none of the stress</p>
 
       <button class="IBM mt-7 w-[85%] rounded-full bg-amber-50 py-3 font-medium md:ml-20 md:w-72">EXPLORE MORE</button>
     </div>
   </section>
 
+  <!-- Place for all your desires -->
   <section>
     <p class="ITC pt-16 text-center text-4xl md:text-7xl">A place for all your desires</p>
     <p class="IBM group mt-2 text-center tracking-tight text-gray-700 transition duration-200 ease-in-out hover:text-blue-700">
@@ -23,24 +24,41 @@
       <span aria-hidden="true" class="inline-block translate-x-0 transition-transform duration-200 ease-in-out group-hover:translate-x-1">→</span>
     </p>
 
-    <div class="mx-auto mt-10 grid w-[85vw] grid-cols-1 grid-rows-1 gap-10 pb-96 text-center lg:w-full lg:grid-cols-4 lg:pl-20 lg:pr-20">
+    <div class="bg-amber-50s mx-auto mt-10 grid w-[85vw] grid-cols-1 grid-rows-1 gap-10 text-center lg:w-full lg:grid-cols-4 lg:pl-20 lg:pr-20">
       <div class="h-96 lg:h-full">
-        <img src="https://imgur.com/JClCEA3.jpg" alt="" class="outline-3 mb-4 h-full w-full rounded-2xl object-cover outline-dashed outline-black" />
+        <img src="https://imgur.com/JClCEA3.jpg" alt="" class="outline-3 mb-4 h-[95%] w-full rounded-2xl object-cover outline-dashed outline-black" />
         <p class="IBM lg:text-sm xl:text-base">Central Park, New York</p>
       </div>
 
       <div class="mt-5 hidden h-96 lg:mt-0 lg:block lg:h-full">
-        <img src="https://imgur.com/Th6NDW5.jpg" alt="" class="outline-3 mb-4 h-full w-full rounded-2xl object-cover outline-dashed outline-black" />
+        <img src="https://imgur.com/Th6NDW5.jpg" alt="" class="outline-3 mb-4 h-[95%] w-full rounded-2xl object-cover outline-dashed outline-black" />
         <p class="IBM lg:text-sm xl:text-base">New Delhi, India</p>
       </div>
 
       <div class="hidden h-96 lg:mt-0 lg:block lg:h-full">
-        <img src="https://imgur.com/JiqBFcZ.jpg" alt="" class="outline-3 mb-4 h-full w-full rounded-2xl object-cover outline-dashed outline-black" />
+        <img src="https://imgur.com/JiqBFcZ.jpg" alt="" class="outline-3 mb-4 h-[95%] w-full rounded-2xl object-cover outline-dashed outline-black" />
         <p class="IBM lg:text-sm xl:text-base">Grand Bazaar, Turkey</p>
       </div>
       <div class="mt-8 h-96 lg:mt-0 lg:block lg:h-full">
-        <img src="https://imgur.com/n0MkUpE.jpg" alt="" class="outline-3 mb-4 h-full w-full rounded-2xl object-cover outline-dashed outline-black" />
+        <img src="https://imgur.com/n0MkUpE.jpg" alt="" class="outline-3 mb-4 h-[95%] w-full rounded-2xl object-cover outline-dashed outline-black" />
         <p class="IBM lg:text-sm xl:text-base">Florence, Italy</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-10">
+    <img src="https://imgur.com/u4UyCFD.jpg" alt="" class="absolute -z-10 h-[90vh] w-1/2 object-cover brightness-90" />
+
+    <div class="flex">
+      <div class="w-1/2 bg-red-300 bg-opacity-40">
+        <p class="ITC p-10 text-6xl text-white">
+          Multiple locations, all luxurious <br />
+          freedom like no other
+        </p>
+      </div>
+
+      <div class="w-1/2 bg-green-400 bg-opacity-50">
+        <p class="ITC text-center md:text-7xl pt-10">Premier Showcase</p>
       </div>
     </div>
   </section>
