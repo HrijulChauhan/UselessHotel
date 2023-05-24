@@ -46,21 +46,42 @@
     </div>
   </section>
 
-  <section class="mt-10">
-    <img src="https://imgur.com/u4UyCFD.jpg" alt="" class="absolute -z-10 h-[90vh] w-1/2 object-cover brightness-90" />
+  <section class="mt-20">
+    <img src="https://imgur.com/9nkY9DZ.jpg" alt="" class="absolute -z-10 h-[90vh] ml-20 rounded-tr-3xl w-1/4 object-cover brightness-50" />
 
-    <div class="flex">
-      <div class="w-1/2 bg-red-300 bg-opacity-40">
-        <p class="ITC p-10 text-6xl text-white">
+    <section class="flex">
+      <div class="w-1/4 bg-opacity-40 ml-20">
+        <p class="ITC p-10 text-7xl text-white">
           Multiple locations, all luxurious <br />
-          freedom like no other
+          freedom like no other ; Discover Premier
         </p>
       </div>
 
-      <div class="w-1/2 bg-green-400 bg-opacity-50">
-        <p class="ITC text-center md:text-7xl pt-10">Premier Showcase</p>
+      <div class="h-[90vh] w-3/4 pl-10 mr-20">
+        <p class="ITC pl-14 md:text-7xl">Premier Showcase</p>
+        <p class="IBM pl-14 pt-5 pr-10  text-lg leading-relaxed tracking-wide">
+          Available only in certain countries with certain locations, <span class="IBM text-blue-700 underline">Premier Hotels</span> represent the best our collection. The highest
+          quality of hospitality, with the widest variety of services.
+        </p>
+        <p class="ITC pt-10 md:text-5xl">Locations</p>
+
+        <div class="grid gap-6 grid-cols-3 pt-7 pl-14 pr-14">
+
+          <div>
+            <img src="https://imgur.com/aHaudfG.jpg" alt="" class="rounded shadow-xl hover:shadow-none transition-shadow duration-300 shadow-blue-200/50 ">
+          </div>
+
+          <div>
+            <img src="https://imgur.com/aHaudfG.jpg" alt="" class="rounded shadow-xl hover:shadow-none transition-shadow duration-300 shadow-blue-200/50 ">
+          </div>
+
+          <div>
+            <img src="https://imgur.com/aHaudfG.jpg" alt="" class="rounded shadow-xl hover:shadow-none transition-shadow duration-300 shadow-blue-200/50 ">
+          </div>
+
+        </div>
       </div>
-    </div>
+    </section>
   </section>
 </template>
 
@@ -94,6 +115,7 @@
 
 <script setup>
 import navbar from "../components/Navbar.vue";
+
 // 1862 width
 // 953 height
 </script>
