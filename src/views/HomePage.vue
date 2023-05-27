@@ -46,43 +46,31 @@
     </div>
   </section>
 
-  <section class="mt-20">
-    <img src="https://imgur.com/9nkY9DZ.jpg" alt="" class="absolute -z-10 h-[90vh] ml-20 rounded-tr-3xl w-1/4 object-cover brightness-50" />
+  <section class=" flex mt-28 w-full h-[50vh] pl-20 pr-20">
 
-    <section class="flex">
-      <div class="w-1/4 bg-opacity-40 ml-20">
-        <p class="ITC p-10 text-7xl text-white">
-          Multiple locations, all luxurious <br />
-          freedom like no other ; Discover Premier
-        </p>
-      </div>
+    <div class="w-2/3 m-2 bg-slate-400 rounded-2xl relative">
+      
+    </div>
 
-      <div class="h-[90vh] w-3/4 pl-10 mr-20">
-        <p class="ITC pl-14 md:text-7xl">Premier Showcase</p>
-        <p class="IBM pl-14 pt-5 pr-10  text-lg leading-relaxed tracking-wide">
-          Available only in certain countries with certain locations, <span class="IBM text-blue-700 underline">Premier Hotels</span> represent the best our collection. The highest
-          quality of hospitality, with the widest variety of services.
-        </p>
-        <p class="ITC pt-10 md:text-5xl">Locations</p>
+    <div class="relative w-1/3 m-2 rounded-2xl">
+      <img src="https://imgur.com/9nkY9DZ.jpg" alt="" class="absolute -z-10 w-full h-full brightness-50 -scale-x-100 object-cover rounded-2xl">
+      <p class="z-20 text-white text-7xl tracking-wide ITC p-10 bg-black h-full bg-opacity-50 rounded-2xl">
+        Luxury at your doorstep, 
+        with none of the stress. 
+        Discover premier.
+      </p>
+    </div>
 
-        <div class="grid gap-6 grid-cols-3 pt-7 pl-14 pr-14">
-
-          <div>
-            <img src="https://imgur.com/aHaudfG.jpg" alt="" class="rounded shadow-xl hover:shadow-none transition-shadow duration-300 shadow-blue-200/50 ">
-          </div>
-
-          <div>
-            <img src="https://imgur.com/aHaudfG.jpg" alt="" class="rounded shadow-xl hover:shadow-none transition-shadow duration-300 shadow-blue-200/50 ">
-          </div>
-
-          <div>
-            <img src="https://imgur.com/aHaudfG.jpg" alt="" class="rounded shadow-xl hover:shadow-none transition-shadow duration-300 shadow-blue-200/50 ">
-          </div>
-
-        </div>
-      </div>
-    </section>
   </section>
+
+  <section class=" flex w-full h-[80vh] pl-20 pr-20">
+
+    <div class="bg-cyan-400 w-[20%] m-2 rounded-2xl"></div>
+
+    <div class="w-4/5 bg-amber-200 m-2 rounded-2xl"></div>
+
+  </section>
+
 </template>
 
 <style>
