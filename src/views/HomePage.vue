@@ -46,31 +46,18 @@
     </div>
   </section>
 
-  <section class=" flex mt-28 w-full h-[50vh] pl-20 pr-20">
-
-    <div class="w-2/3 m-2 bg-slate-400 rounded-2xl relative">
-      
+  <section class="mt-20 flex h-[100vh] w-full bg-[#D7DF58]">
+    <div class="mt-[5vh] w-1/2 pl-20">
+      <p>This is dababy</p>
     </div>
 
-    <div class="relative w-1/3 m-2 rounded-2xl">
-      <img src="https://imgur.com/9nkY9DZ.jpg" alt="" class="absolute -z-10 w-full h-full brightness-50 -scale-x-100 object-cover rounded-2xl">
-      <p class="z-20 text-white text-7xl tracking-wide ITC p-10 bg-black h-full bg-opacity-50 rounded-2xl">
-        Luxury at your doorstep, 
-        with none of the stress. 
-        Discover premier.
-      </p>
+ 
+    <div class="w-1/2 bg-green-400">
+      <img src="https://imgur.com/JL3LzKh.jpg" alt="" class="w-full h-[90%] mt-[5%] object-cover">
+
     </div>
 
   </section>
-
-  <section class=" flex w-full h-[80vh] pl-20 pr-20">
-
-    <div class="bg-cyan-400 w-[20%] m-2 rounded-2xl"></div>
-
-    <div class="w-4/5 bg-amber-200 m-2 rounded-2xl"></div>
-
-  </section>
-
 </template>
 
 <style>
