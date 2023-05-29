@@ -46,17 +46,24 @@
     </div>
   </section>
 
-  <section class="mt-20 flex h-[100vh] w-full bg-[#D7DF58]">
-    <div class="mt-[5vh] w-1/2 pl-20">
-      <p>This is dababy</p>
+  <section class="mt-36 flex h-[100vh] w-full bg-indigo-200">
+
+    <div class="w-1/2 pt-10 pl-20">
+      <p class="inter font-light text-[#1b254b]">Premier Collection</p>
+      <p class="inter pt-80 text-4xl font-medium leading-tight text-[#1b254b]">
+        Creating affordable luxury, at your doorstep. <br>
+        Unwavering commmittment to you.
+      </p>
+      <p class="inter pt-7 leading-relaxed tracking-wide pr-14 text-[#1b254b]">
+        The premier hotels represent the best of our collection. They are typically located in prime locations, offer excellent amenities, and provide superior service. 
+        Premier hotels are often the choice of business travelers and discerning leisure guests.
+      </p>
+      <button class="bg-[#1b254b] text-white px-10 rounded-full py-3 mt-7">Browse More</button>
     </div>
 
- 
-    <div class="w-1/2 bg-green-400">
-      <img src="https://imgur.com/JL3LzKh.jpg" alt="" class="w-full h-[90%] mt-[5%] object-cover">
-
+    <div class="w-1/2 p-14 pr-20">
+      <img :src="source" alt="" class="h-full w-full rounded-xl object-cover shadow-2xl shadow-[#1b254b]" />
     </div>
-
   </section>
 </template>
 
@@ -80,16 +87,37 @@
   font-family: "ITCLightNarrow";
 }
 .IBM {
-  font-family: "IBM Plex Mono", monospace;
+  /* font-family: "IBM Plex Mono", monospace; */
+  font-family: "Inter", sans-serif;
 }
 
-.main-container {
-  height: 70vh;
+.inter {
+  font-family: "Inter", sans-serif;
 }
+
 </style>
 
 <script setup>
+import { ref } from "vue";
 import navbar from "../components/Navbar.vue";
+
+const carouselSources = ["https://imgur.com/lqRkNY1.jpg", "https://imgur.com/9oVxh5D.jpg", "https://imgur.com/xAyVM2T.jpg"];
+const count = ref(0);
+const source = ref("https://imgur.com/lqRkNY1.jpg");
+
+function ChangeImage() {
+  count.value++;
+  if (count.value > 2) {
+    count.value = 0;
+  }
+
+  source.value = carouselSources[count.value];
+}
+
+
+setInterval(() => {
+  ChangeImage();
+}, 4000);
 
 // 1862 width
 // 953 height
