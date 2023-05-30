@@ -46,23 +46,23 @@
     </div>
   </section>
 
-  <section class="mt-36 md:flex h-[100vh] w-full bg-indigo-200 block">
+  <section class="mt-36 xl:flex h-[100vh] w-full bg-indigo-200 block">
 
-    <div class="md:w-1/2 w-full md:pt-10 pt-5 md:pl-20 pl-10 pr-10">
+    <div class="xl:w-1/2 w-full xl:pt-10 pt-[5vh] xl:pl-20 pl-10 pr-10">
       <p class="inter font-light text-[#1b254b] text-xs">Premier Collection</p>
-      <p class="inter md:pt-80 pt-3 md:text-4xl text-2xl font-medium leading-tight text-[#1b254b]">
+      <p class="inter xl:pt-80 pt-3 md:text-4xl text-2xl font-medium leading-tight text-[#1b254b]">
         Creating affordable luxury, at your doorstep. <br>
         Unwavering commmittment to you.
       </p>
-      <p class="inter pt-5 hidden md:block leading-relaxed tracking-wide pr-14 text-[#1b254b]">
+      <p class="inter pt-5 hidden xl:block leading-relaxed tracking-wide pr-14 text-[#1b254b]">
         The premier hotels represent the best of our collection. They are typically located in prime locations, offer excellent amenities, and provide superior service. 
         Premier hotels are often the choice of business travelers and discerning leisure guests.
       </p>
-      <button class="bg-[#1b254b] text-white text-xs px-5 rounded-full py-2 md:mt-7 mt-3">Browse More</button>
+      <button class="bg-[#1b254b] text-white text-xs px-5 rounded-full py-2 xl:mt-7 mt-3">Browse More</button>
     </div>
 
-    <div class="md:w-1/2 w-full md:p-14 md:pr-20 pl-10 pr-10 pt-5 h-full">
-      <img :src="source" alt="" class="md:h-full w-full rounded-lg object-cover shadow-2xl shadow-[#1b254b] h-[60%]" />
+    <div class="xl:w-1/2 w-full xl:p-14 xl:pr-20 pl-10 pr-10 pt-[5vh] h-full">
+      <img :src="source" alt="" class="xl:h-full w-full rounded-lg object-cover shadow-2xl shadow-[#1b254b] h-[60%]" />
     </div>
   </section>
 </template>
