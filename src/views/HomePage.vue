@@ -65,6 +65,10 @@
       <img :src="source" alt="" class="xl:h-full w-full rounded-lg object-cover shadow-2xl shadow-[#1b254b] h-[60%]" />
     </div>
   </section>
+
+<div>
+  <footer2 />
+</div>
 </template>
 
 <style>
@@ -100,6 +104,7 @@
 <script setup>
 import { ref } from "vue";
 import navbar from "../components/Navbar.vue";
+import footer2 from "../components/Footer.vue";
 
 const carouselSources = ["https://imgur.com/lqRkNY1.jpg", "https://imgur.com/9oVxh5D.jpg", "https://imgur.com/xAyVM2T.jpg"];
 const count = ref(0);
