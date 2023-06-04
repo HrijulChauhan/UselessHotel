@@ -49,7 +49,7 @@
   <section class="mt-36 xl:flex h-[100vh] w-full bg-indigo-200 block">
 
     <div class="xl:w-1/2 w-full xl:pt-10 pt-[5vh] xl:pl-20 pl-10 pr-10">
-      <p class="inter font-light text-[#1b254b] text-xs">Premier Collection</p>
+      <p class="inter font-light text-[#1b254b] text-xs md:text-base">Premier Collection</p>
       <p class="inter xl:pt-80 pt-3 md:text-4xl text-2xl font-medium leading-tight text-[#1b254b]">
         Creating affordable luxury, at your doorstep. <br>
         Unwavering commmittment to you.
@@ -58,7 +58,7 @@
         The premier hotels represent the best of our collection. They are typically located in prime locations, offer excellent amenities, and provide superior service. 
         Premier hotels are often the choice of business travelers and discerning leisure guests.
       </p>
-      <button class="bg-[#1b254b] text-white text-xs px-5 rounded-full py-2 xl:mt-7 mt-3">Browse More</button>
+      <button class="bg-[#1b254b] text-white text-xs lg:text-base px-5 rounded-full py-2 xl:mt-7 mt-3">Browse More</button>
     </div>
 
     <div class="xl:w-1/2 w-full xl:p-14 xl:pr-20 pl-10 pr-10 pt-[5vh] h-full">
