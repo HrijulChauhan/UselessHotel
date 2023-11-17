@@ -12,6 +12,7 @@ async function getCountries() {
   const { data } = await supabase.from("hotel").select().eq("id", route.params.id);
   hotelInformation.value = data;
   ImageSrc = hotelInformation.value[0].image_link
+  console.log(ImageSrc);
 }
 
 
@@ -44,7 +45,12 @@ onBeforeMount(() => {
           <p class="text-justify text-sm leading-5 tracking-normal">{{ hotelInformation[0].description }}</p>
           <button class="mt-5 bg-black px-8 py-2 text-base text-white" @click="router.push('/reserve')">Reserve</button>
         </div>
+        <router-link to="/book">
+          <div class="mt-5">Go back</div>
+        </router-link>
       </section>
     </div>
+
+
   </body>
 </template>

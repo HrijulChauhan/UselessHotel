@@ -1,58 +1,43 @@
 <template>
-  <!-- <navbar class="">
-    <template #first_nav>
-      <p class="px-3 hover:text-black">Home</p>
-    </template>
-
-    <template #second_nav>
-      <p class="px-3 hover:text-black">About Us</p>
-    </template>
-
-    <template #third_nav>
-      <p class="px-3 hover:text-black">Contact</p>
-    </template>
-
-    <template #fourth_nav>
-      <p class="px-3 hover:text-black">Browse</p>
-    </template>
-
-    <template #first_hb>
-      <a href="#" class="animate-1_5 mt-36 pb-5 text-blue-600">Home</a>
-    </template>
-
-    <template #second_hb>
-      <a href="#" class="animate-1_25 pb-5 text-black">Contact Us</a>
-    </template>
-
-    <template #third_hb>
-      <a href="#" class="animate-1 pb-5 text-black">Browse</a>
-    </template>
-  </navbar> -->
-
   <div class="m-auto mt-10 w-4/5">
-    <!-- using the SPAN tag for some reason doesnt apply the margin top -->
-    <div class="mt-1 mb-6 text-center text-2xl font-medium tracking-tight text-gray-900">Browse Hotels</div>
+    <section>
+      <!-- using the SPAN tag for some reason doesnt apply the margin top -->
+      <router-link to="/">
+        <p class="mt-1 mb-6 text-center text-2xl font-medium tracking-tight text-gray-900">Browse Hotels</p>
+      </router-link>
+      <section class="flex justify-between">
+        <div>
+          <label for="" class="mb-1 block text-sm font-medium text-gray-900">Filter By</label>
+          <select
+            name="Filter By"
+            id=""
+            class="mb-5 rounded-sm bg-slate-200 px-4 py-1 text-sm shadow-sm outline-none ring-1 ring-slate-300"
+            v-model="selectedOption"
+            @change="FilterByPrice(selectedOption)"
+          >
+            <option disabled value="" class="text-sm">Select one</option>
+            <option value="ascending" class="text-sm text-slate-900">Price (Ascending)</option>
+            <option value="descending" class="text-sm text-slate-900">Price (Descending)</option>
+          </select>
+        </div>
 
-    <div class="flex justify-between">
-    
-    <div>
-      <label for="" class="mb-1 block text-sm font-medium text-gray-900">Filter By</label>
-      <select name="Filter By" id="" class="mb-5 rounded-sm bg-slate-200 px-4 py-1 text-sm shadow-sm outline-none ring-1 ring-slate-300" v-model="selectedOption" @change="FilterByPrice(selectedOption)">
-        <option disabled value="" class="text-sm">Select one</option>
-        <option value="ascending" class="text-sm text-slate-900">Price (Ascending)</option>
-        <option value="descending" class="text-sm text-slate-900">Price (Descending)</option>
-      </select>
-    </div>
-
-      <div class="">
-        <img src="https://imgur.com/FL1hP1U.png" alt="your-image-description" class="rounded-full w-10 h-10 mt-3" @click="this,$router.push('/setting')">
-      </div>
-    </div>
+        <img
+          src="https://imgur.com/FL1hP1U.png"
+          alt="your-image-description"
+          class="mt-3 h-10 w-10 rounded-full"
+          @click="this, $router.push('/setting')"
+        />
+      </section>
+    </section>
 
     <div class="justify-between 2xl:flex">
       <div v-for="hotel in hotels.slice(0, 3)" class="">
         <router-link :to="{ name: 'productInformation', params: { id: hotel.id } }">
-          <img :src="hotel.src" alt="Image" class="mt-5 h-96 w-full rounded object-cover object-center shadow-2xl duration-500 hover:shadow-green-200 2xl:w-96" />
+          <img
+            :src="hotel.src"
+            alt="Image"
+            class="mt-5 h-96 w-full rounded object-cover object-center shadow-2xl duration-500 hover:shadow-green-200 2xl:w-96"
+          />
         </router-link>
 
         <div class="mt-1 text-sm font-medium tracking-normal text-gray-900">${{ hotel.price }}</div>
@@ -65,7 +50,11 @@
     <span class="block justify-between 2xl:flex">
       <div v-for="hotel in hotels.slice(3, 6)">
         <router-link :to="{ name: 'productInformation', params: { id: hotel.id } }">
-          <img :src="hotel.src" alt="Image" class="mt-5 h-96 w-full rounded object-cover shadow-2xl duration-500 hover:shadow-green-200 2xl:w-96" />
+          <img
+            :src="hotel.src"
+            alt="Image"
+            class="mt-5 h-96 w-full rounded object-cover shadow-2xl duration-500 hover:shadow-green-200 2xl:w-96"
+          />
         </router-link>
 
         <div class="mt-1 text-sm font-medium tracking-normal text-gray-900">${{ hotel.price }}</div>
@@ -80,7 +69,7 @@
 <script>
 import navbar from "../components/Navbar.vue";
 import bottomFooter from "../components/Footer.vue";
-import {useRouter} from 'vue-router'
+import { useRouter } from "vue-router";
 
 export default {
   components: {
@@ -147,9 +136,9 @@ export default {
       console.log("bruh");
     },
 
-    goToSettings(){
-      this.$router.push('/setting')
-    }
+    goToSettings() {
+      this.$router.push("/setting");
+    },
   },
 };
 </script>

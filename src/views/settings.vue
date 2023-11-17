@@ -29,6 +29,7 @@ async function session() {
 async function getBooking() {
   if (loggedIn) {
     const { data, error } = await supabase.from("booking").select().eq("email", email.value);
+    console.log(data);
     if (error) {
       console.log(error);
     } else {

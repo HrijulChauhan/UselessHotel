@@ -13,7 +13,7 @@
             <input type="password" name="password" id="" v-model="password" placeholder="" class="mt-2 block w-96 rounded border-[0.5px] border-gray-400 py-2 pl-3 text-base outline-none ring-1 ring-inset ring-slate-200 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600" />
             <div class="pt-7 text-sm font-light">Got an account? <a href="javascript:void(0)"><span class="text-gray-600 font-semibold" @click="RouteToLogin"> Log-In</span></a> instead</div>
           </div>
-          <button @click="loginFunctionality" type="" class="mt-2 w-96 rounded bg-indigo-500 py-3 font-semibold text-white">Registers</button>
+          <button @click="loginFunctionality" type="" class="mt-2 w-96 rounded bg-indigo-500 py-3 font-semibold text-white">Register</button>
         </div>
   
       </div>
@@ -35,7 +35,7 @@
   const router = useRouter();
   
   async function loginFunctionality() {
-    const { data, error } = await supabase.auth.signInWithPassword({
+    const { data, error } = await supabase.auth.signUp({
       email: email.value,
       password: password.value,
     });
@@ -45,7 +45,7 @@
       console.log(error.message);
     } else {
       console.log(data);
-      router.push("/book");
+      router.push("/login");
     }
   }
   
