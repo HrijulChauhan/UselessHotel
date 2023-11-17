@@ -1,7 +1,14 @@
-# Vue 3 + Vite
+Entire codebase works, supabase **shutdown my database** cause it was inactive so it just doesn't work online as of right now <br>
+### tech used 
+supbase SDK
+tailwindCSS
+VueJS (mostly forthe VueRouter)
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+### updates
+1) changed the entire design of the front page, I like the new design WAYYYY better. (some design inspiration taken from junedays but coded the entire thing myself which was a pain in d butt) <br>
+before
+![pasted image 0](https://github.com/HrijulChauhan/UselessHotel/assets/59968320/2a52cc97-db4b-4590-97e3-3f58fc66119e)
+after
+![image](https://github.com/HrijulChauhan/UselessHotel/assets/59968320/45f99b15-be39-4f6f-b23d-1238cb145d2c)
 
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+2) certain features (like sign-in sign-up wont work and neither will booking in case **supaaaabase** turns off my dormant DB (which will happen cause no one will use it)
